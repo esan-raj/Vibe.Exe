@@ -27,3 +27,9 @@ ios
 *.njsproj
 *.sln
 *.sw?
+# AI / ML models
+*.safetensors
+*.pt
+*.bin
+*.onnx
+models/
