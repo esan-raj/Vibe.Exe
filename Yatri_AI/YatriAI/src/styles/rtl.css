@@ -1,0 +1,398 @@
+/**
+ * RTL (Right-to-Left) CSS Helpers
+ * 
+ * Provides styling support for RTL languages like Arabic, Hebrew, and Urdu.
+ * Classes are automatically applied when html[dir="rtl"] is set.
+ */
+
+/* ============================================
+   Base RTL Adjustments
+   ============================================ */
+
+/* Flip text alignment */
+html[dir="rtl"] {
+  text-align: right;
+}
+
+/* Preserve LTR for specific elements */
+html[dir="rtl"] .ltr-preserve {
+  direction: ltr;
+  text-align: left;
+}
+
+/* ============================================
+   Flexbox Direction Flipping
+   ============================================ */
+
+html[dir="rtl"] .flex-row {
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .rtl-flex-row-reverse {
+  flex-direction: row;
+}
+
+/* Keep original direction for some elements */
+html[dir="rtl"] .rtl-keep-ltr {
+  direction: ltr;
+}
+
+/* ============================================
+   Margin & Padding Flipping
+   ============================================ */
+
+/* Auto-flip margins */
+html[dir="rtl"] .ml-auto {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+html[dir="rtl"] .mr-auto {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+/* Space utilities - flip for RTL */
+html[dir="rtl"] .space-x-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 1;
+}
+
+html[dir="rtl"] .space-x-3 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 1;
+}
+
+html[dir="rtl"] .space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 1;
+}
+
+html[dir="rtl"] .space-x-6 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 1;
+}
+
+/* ============================================
+   Position Adjustments
+   ============================================ */
+
+/* Flip absolute/fixed positioned elements */
+html[dir="rtl"] .rtl-flip-position {
+  right: auto;
+  left: 0;
+}
+
+html[dir="rtl"] .rtl-flip-position-reverse {
+  left: auto;
+  right: 0;
+}
+
+/* Dropdown positioning */
+html[dir="rtl"] .dropdown-right {
+  right: auto;
+  left: 0;
+}
+
+html[dir="rtl"] .dropdown-left {
+  left: auto;
+  right: 0;
+}
+
+/* ============================================
+   Transform Adjustments
+   ============================================ */
+
+/* Flip horizontal transforms */
+html[dir="rtl"] .rtl-flip-x {
+  transform: scaleX(-1);
+}
+
+/* Flip translate-x */
+html[dir="rtl"] .-translate-x-1\/2 {
+  --tw-translate-x: 50%;
+}
+
+html[dir="rtl"] .translate-x-full {
+  --tw-translate-x: -100%;
+}
+
+/* ============================================
+   Icon Flipping
+   ============================================ */
+
+/* Flip directional icons */
+html[dir="rtl"] .rtl-flip-icon {
+  transform: scaleX(-1);
+}
+
+/* Icons that should always stay LTR */
+html[dir="rtl"] .icon-ltr {
+  transform: none;
+}
+
+/* Arrow icons - flip in RTL */
+html[dir="rtl"] .arrow-right {
+  transform: rotate(180deg);
+}
+
+html[dir="rtl"] .arrow-left {
+  transform: rotate(0deg);
+}
+
+/* ============================================
+   Border Radius Flipping
+   ============================================ */
+
+html[dir="rtl"] .rounded-l-lg {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+html[dir="rtl"] .rounded-r-lg {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+html[dir="rtl"] .rounded-l-xl {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+}
+
+html[dir="rtl"] .rounded-r-xl {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 0.75rem;
+  border-bottom-left-radius: 0.75rem;
+}
+
+/* ============================================
+   Form Elements
+   ============================================ */
+
+/* Input text alignment */
+html[dir="rtl"] input[type="text"],
+html[dir="rtl"] input[type="email"],
+html[dir="rtl"] input[type="password"],
+html[dir="rtl"] input[type="search"],
+html[dir="rtl"] textarea {
+  text-align: right;
+}
+
+/* Input with icon - padding flip */
+html[dir="rtl"] .input-with-left-icon {
+  padding-left: 0.75rem;
+  padding-right: 2.5rem;
+}
+
+html[dir="rtl"] .input-icon-left {
+  left: auto;
+  right: 0.75rem;
+}
+
+html[dir="rtl"] .input-with-right-icon {
+  padding-right: 0.75rem;
+  padding-left: 2.5rem;
+}
+
+html[dir="rtl"] .input-icon-right {
+  right: auto;
+  left: 0.75rem;
+}
+
+/* ============================================
+   Sidebar Adjustments
+   ============================================ */
+
+html[dir="rtl"] .sidebar-left {
+  left: auto;
+  right: 0;
+  border-left: none;
+  border-right: 1px solid;
+}
+
+html[dir="rtl"] .sidebar-right {
+  right: auto;
+  left: 0;
+  border-right: none;
+  border-left: 1px solid;
+}
+
+/* ============================================
+   Animation Adjustments
+   ============================================ */
+
+/* Slide animations - flip direction */
+@keyframes rtl-slide-in-right {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes rtl-slide-in-left {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+html[dir="rtl"] .animate-slide-in-right {
+  animation: rtl-slide-in-right 0.3s ease-out;
+}
+
+html[dir="rtl"] .animate-slide-in-left {
+  animation: rtl-slide-in-left 0.3s ease-out;
+}
+
+/* ============================================
+   Component-Specific RTL Fixes
+   ============================================ */
+
+/* Header navigation */
+html[dir="rtl"] .nav-items {
+  flex-direction: row-reverse;
+}
+
+/* Card layouts */
+html[dir="rtl"] .card-with-icon {
+  flex-direction: row-reverse;
+}
+
+/* List items with icons */
+html[dir="rtl"] .list-item-icon {
+  margin-right: 0;
+  margin-left: 0.75rem;
+}
+
+/* Breadcrumbs */
+html[dir="rtl"] .breadcrumb-separator {
+  transform: rotate(180deg);
+}
+
+/* Progress bars - flip direction */
+html[dir="rtl"] .progress-bar {
+  direction: rtl;
+}
+
+html[dir="rtl"] .progress-bar-fill {
+  transform-origin: right;
+}
+
+/* ============================================
+   Hide Scrollbars for RTL
+   ============================================ */
+
+html[dir="rtl"] ::-webkit-scrollbar {
+  display: none;
+}
+
+html[dir="rtl"] {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+html[dir="rtl"] * {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+html[dir="rtl"] *::-webkit-scrollbar {
+  display: none;
+}
+
+/* ============================================
+   Table Adjustments
+   ============================================ */
+
+html[dir="rtl"] table {
+  direction: rtl;
+}
+
+html[dir="rtl"] th,
+html[dir="rtl"] td {
+  text-align: right;
+}
+
+html[dir="rtl"] th:first-child,
+html[dir="rtl"] td:first-child {
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+html[dir="rtl"] th:last-child,
+html[dir="rtl"] td:last-child {
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+/* ============================================
+   Utility Classes
+   ============================================ */
+
+/* Force LTR direction */
+.force-ltr {
+  direction: ltr !important;
+  text-align: left !important;
+}
+
+/* Force RTL direction */
+.force-rtl {
+  direction: rtl !important;
+  text-align: right !important;
+}
+
+/* Logical properties for modern browsers */
+@supports (margin-inline-start: 0) {
+  .ms-auto {
+    margin-inline-start: auto;
+  }
+  
+  .me-auto {
+    margin-inline-end: auto;
+  }
+  
+  .ps-4 {
+    padding-inline-start: 1rem;
+  }
+  
+  .pe-4 {
+    padding-inline-end: 1rem;
+  }
+  
+  .start-0 {
+    inset-inline-start: 0;
+  }
+  
+  .end-0 {
+    inset-inline-end: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,197 @@
+[
+  {
+    "title": "Tram Heritage Route 36",
+    "description": "Experience Kolkata's iconic yellow tram on Route 36, passing through major heritage landmarks including Victoria Memorial and Park Street. This vintage mode of transport offers a unique perspective of the city's colonial architecture.",
+    "category": "heritage",
+    "icon": "🚃"
+  },
+  {
+    "title": "Durga Puja Pandal Hopping",
+    "description": "Explore the best Durga Puja pandals in South Kolkata, starting with Ekdalia Evergreen. Best visited during early morning hours (2-5 AM) to avoid crowds and witness the artistic brilliance of Kumartuli artisans.",
+    "category": "culture",
+    "icon": "🪔"
+  },
+  {
+    "title": "College Street Literary Walk",
+    "description": "Discover colonial architecture and literary heritage through College Street, Indian Coffee House, and Jorasanko Thakur Bari - Tagore's ancestral home. Asia's largest second-hand book market awaits bibliophiles.",
+    "category": "heritage",
+    "icon": "📚"
+  },
+  {
+    "title": "Kumartuli Artisan Experience",
+    "description": "Meet the clay idol makers and learn about the 300-year-old tradition of Kolkata. Watch artisans create stunning Durga idols with devotion and skill in the historic potter's quarter.",
+    "category": "culture",
+    "icon": "🎭"
+  },
+  {
+    "title": "Victoria Memorial at Dawn",
+    "description": "Visit the iconic white marble monument early morning to avoid crowds. The museum houses rare artifacts and the beautiful gardens offer peaceful walks with stunning architecture views.",
+    "category": "heritage",
+    "icon": "🏛️"
+  },
+  {
+    "title": "Howrah Bridge Sunrise Walk",
+    "description": "Walk across the iconic cantilever bridge at dawn when it carries 100,000 vehicles daily. Experience the Hooghly River views and witness the city waking up - a photographer's paradise.",
+    "category": "heritage",
+    "icon": "🌉"
+  },
+  {
+    "title": "Park Street Food & Nightlife",
+    "description": "The iconic party street transforms during Christmas and evenings. Sample authentic Bengali cuisine at Arsalan's biryani or 6 Ballygunge Place, then explore the vibrant nightlife.",
+    "category": "food",
+    "icon": "🍛"
+  },
+  {
+    "title": "Princep Ghat Sunset Views",
+    "description": "Beautiful riverside ghat with Palladian architecture, perfect for evening walks and boat rides on the Hooghly. Arrive 30 minutes before sunset for magical views and peaceful moments.",
+    "category": "nature",
+    "icon": "🌅"
+  },
+  {
+    "title": "Indian Coffee House Adda",
+    "description": "For authentic adda culture, visit Indian Coffee House on College Street since 1942. Experience the intellectual conversations, literary discussions, and traditional Bengali coffee house atmosphere.",
+    "category": "culture",
+    "icon": "☕"
+  },
+  {
+    "title": "Dakshineswar Kali Temple",
+    "description": "Famous Hindu temple dedicated to Goddess Kali, associated with Saint Ramakrishna Paramhansa. Experience the spiritual energy and witness the evening aarti ceremony for a profound cultural experience.",
+    "category": "spiritual",
+    "icon": "🛕"
+  },
+  {
+    "title": "Kalighat Temple Visit",
+    "description": "One of the 51 Shakti Peethas, an ancient Hindu temple dedicated to Goddess Kali. Visit during aarti for the complete spiritual experience and witness traditional Bengali religious practices.",
+    "category": "spiritual",
+    "icon": "🪔"
+  },
+  {
+    "title": "Marble Palace Art Collection",
+    "description": "A 19th-century palatial mansion with an exquisite collection of art, antiques, and rare marble sculptures. Requires advance permission but offers a glimpse into Kolkata's aristocratic past.",
+    "category": "heritage",
+    "icon": "🏛️"
+  },
+  {
+    "title": "New Market Shopping Spree",
+    "description": "Kolkata's iconic Victorian-era market selling everything from clothes to spices since 1874. Navigate through the labyrinthine alleys to find authentic Bengali handicrafts and traditional items.",
+    "category": "culture",
+    "icon": "🛍️"
+  },
+  {
+    "title": "Indian Museum Exploration",
+    "description": "The oldest and largest museum in India, housing rare antiques, fossils, armor, and Mughal paintings. Spend a day exploring the extensive collections spanning centuries of Indian history.",
+    "category": "culture",
+    "icon": "🏺"
+  },
+  {
+    "title": "Jorasanko Thakur Bari",
+    "description": "The ancestral home of Nobel Laureate Rabindranath Tagore, now a museum and university. Don't miss Tagore's original artworks and experience the literary heritage of Bengal's greatest poet.",
+    "category": "heritage",
+    "icon": "🎨"
+  },
+  {
+    "title": "Street Food Crawl",
+    "description": "Sample Kolkata's famous street food including puchkas, kathi rolls, jhal muri, and phuchka. Start at Park Circus and make your way through various street food stalls for an authentic culinary adventure.",
+    "category": "food",
+    "icon": "🍜"
+  },
+  {
+    "title": "Mishti Doi & Sandesh Tasting",
+    "description": "Don't leave without trying mishti doi and sandesh from Balaram Mullick. These traditional Bengali sweets are a cultural experience, representing the city's culinary heritage and sweet-making traditions.",
+    "category": "food",
+    "icon": "🍰"
+  },
+  {
+    "title": "Rabindra Sadan Classical Concerts",
+    "description": "Hosts classical concerts and cultural performances. Check the schedule for baul performances, Rabindra Sangeet recitals, and traditional Bengali music shows for an immersive cultural experience.",
+    "category": "culture",
+    "icon": "🎵"
+  },
+  {
+    "title": "Tram Route 5 Heritage Tour",
+    "description": "Historic route connecting Howrah Station to Esplanade. Ride this colonial-era tram to experience the city's transportation heritage and see how Kolkata's public transport evolved over decades.",
+    "category": "heritage",
+    "icon": "🚋"
+  },
+  {
+    "title": "Eco Park & Wetlands",
+    "description": "Escape the city hustle at Eco Park with its beautiful lakes, gardens, and recreational activities. Perfect for families and nature lovers seeking a peaceful retreat within the urban landscape.",
+    "category": "nature",
+    "icon": "🌳"
+  },
+  {
+    "title": "Belur Math Spiritual Retreat",
+    "description": "The headquarters of Ramakrishna Math and Mission, located on the banks of Hooghly River. Experience peace, meditation, and learn about Swami Vivekananda's teachings in this serene spiritual center.",
+    "category": "spiritual",
+    "icon": "🕉️"
+  },
+  {
+    "title": "Botanical Gardens Heritage",
+    "description": "Home to the Great Banyan Tree, one of the largest trees in the world. Explore the 273-acre garden established in 1787, featuring rare plant species and colonial-era landscaping.",
+    "category": "nature",
+    "icon": "🌲"
+  },
+  {
+    "title": "St. Paul's Cathedral",
+    "description": "A Gothic-style Anglican cathedral built in 1847, showcasing stunning architecture and stained glass windows. Attend a service or simply admire the peaceful ambiance and historical significance.",
+    "category": "heritage",
+    "icon": "⛪"
+  },
+  {
+    "title": "Birla Planetarium Show",
+    "description": "One of the largest planetariums in Asia, offering fascinating astronomy shows and exhibits. Perfect for science enthusiasts and families looking for an educational yet entertaining experience.",
+    "category": "culture",
+    "icon": "🔭"
+  },
+  {
+    "title": "Hooghly River Cruise",
+    "description": "Take a boat ride on the Hooghly River to see Kolkata from a different perspective. Witness the ghats, bridges, and riverside architecture while enjoying the gentle breeze and scenic views.",
+    "category": "nature",
+    "icon": "⛵"
+  },
+  {
+    "title": "Kolkata Street Art Tour",
+    "description": "Discover vibrant street art and murals across the city, especially in Park Street and College Street areas. These contemporary artworks blend modern expression with traditional Bengali themes.",
+    "category": "culture",
+    "icon": "🎨"
+  },
+  {
+    "title": "Traditional Bengali Thali",
+    "description": "Experience an authentic Bengali meal with traditional thali at restaurants like Bhojohori Manna or Kewpie's. Savor dishes like shorshe ilish, chingri malai curry, and various vegetarian delicacies.",
+    "category": "food",
+    "icon": "🍽️"
+  },
+  {
+    "title": "Kolkata Book Fair",
+    "description": "If visiting during January-February, don't miss the International Kolkata Book Fair - the largest book fair in Asia. Meet authors, discover rare books, and immerse in the literary culture.",
+    "category": "culture",
+    "icon": "📖"
+  },
+  {
+    "title": "Dhakuria Lake Boating",
+    "description": "A peaceful lake in South Kolkata perfect for boating and evening walks. The surrounding park offers jogging tracks, children's play areas, and a serene environment away from city noise.",
+    "category": "nature",
+    "icon": "🛶"
+  },
+  {
+    "title": "Traditional Pottery Workshop",
+    "description": "Learn the art of terracotta pottery in Kumartuli or visit Panchmura to see artisans create the iconic Bankura horse. Hands-on workshops available for those interested in traditional crafts.",
+    "category": "culture",
+    "icon": "🏺"
+  },
+  {
+    "title": "Kolkata Heritage Walk",
+    "description": "Join a guided heritage walk through North Kolkata's narrow lanes, discovering hidden temples, colonial mansions, and traditional Bengali architecture. Learn about the city's rich history from local experts.",
+    "category": "heritage",
+    "icon": "🚶"
+  },
+  {
+    "title": "Science City Exploration",
+    "description": "India's largest science center with interactive exhibits, 3D shows, and a space theater. Perfect for families and science enthusiasts to explore technology, astronomy, and scientific innovations.",
+    "category": "culture",
+    "icon": "🔬"
+  }
+]
+
+
+

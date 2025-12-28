@@ -1,0 +1,444 @@
+{
+  "brand": {
+    "name": "Kolkata Heritage",
+    "tagline": "City of Joy",
+    "subtitle": "City of Joy Heritage Explorer",
+    "description": "Your AI-powered companion for exploring the City of Joy. Discover heritage walks, connect with artisans, and experience the soul of Kolkata through technology."
+  },
+  "nav": {
+    "home": "Home",
+    "heritage": "Heritage",
+    "pujo": "Pujo",
+    "artisans": "Artisans",
+    "about": "About",
+    "dashboard": "Dashboard",
+    "profile": "Profile",
+    "settings": "Settings",
+    "marketplace": "Marketplace"
+  },
+  "auth": {
+    "login": "Login",
+    "logout": "Logout",
+    "register": "Register",
+    "signUp": "Sign Up",
+    "signIn": "Sign In",
+    "email": "Email",
+    "emailAddress": "Email Address",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "name": "Name",
+    "fullName": "Full Name",
+    "forgotPassword": "Forgot Password?",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?",
+    "chooseRole": "Choose Your Role",
+    "welcomeBack": "Welcome Back",
+    "createAccount": "Create Account",
+    "processing": "Processing...",
+    "backToRoles": "← Back to role selection",
+    "termsAgree": "I agree to the",
+    "termsOfService": "Terms of Service",
+    "privacyPolicy": "Privacy Policy",
+    "and": "and",
+    "passwordMismatch": "Passwords do not match",
+    "passwordTooShort": "Password must be at least 6 characters",
+    "authFailed": "Authentication failed. Please try again.",
+    "enterEmail": "Enter your email",
+    "enterPassword": "Enter your password",
+    "enterFullName": "Enter your full name",
+    "confirmYourPassword": "Confirm your password",
+    "roles": {
+      "tourist": {
+        "title": "Tourist / Traveler",
+        "description": "Explore Kolkata with AI-powered recommendations"
+      },
+      "guide": {
+        "title": "Local Guide",
+        "description": "Share your knowledge and earn as a certified guide"
+      },
+      "seller": {
+        "title": "Marketplace Seller",
+        "description": "Sell authentic handicrafts and local products"
+      },
+      "admin": {
+        "title": "Local Authority / Admin",
+        "description": "Manage tourism services and certifications"
+      }
+    }
+  },
+  "common": {
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "search": "Search",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "viewAll": "View All",
+    "learnMore": "Learn more",
+    "explore": "Explore",
+    "subscribe": "Subscribe",
+    "subscribed": "Subscribed!",
+    "selectLanguage": "Select Language",
+    "searchLanguage": "Search languages...",
+    "lightMode": "Switch to light mode",
+    "darkMode": "Switch to dark mode",
+    "and": "and",
+    "new": "NEW",
+    "verified": "Verified",
+    "blockchainVerified": "Blockchain Verified",
+    "poweredByAI": "Powered by AI & Blockchain",
+    "rating": "rating",
+    "happyExplorers": "happy explorers",
+    "heritageCertifiedGuides": "Heritage certified guides"
+  },
+  "hero": {
+    "title": "Kolkata Heritage",
+    "subtitle": "City of Joy",
+    "description": "From the legacy of trams, tea, and Tagore — Experience where tradition meets transformation.",
+    "trams": "trams",
+    "tea": "tea",
+    "tagore": "Tagore",
+    "searchPlaceholder": "Search Victoria Memorial, Howrah Bridge...",
+    "exploreCTA": "Explore",
+    "images": {
+      "victoria": {
+        "title": "Victoria Memorial",
+        "subtitle": "The crown jewel of Kolkata's heritage"
+      },
+      "howrah": {
+        "title": "Howrah Bridge",
+        "subtitle": "The iconic gateway to the City of Joy"
+      },
+      "kumartuli": {
+        "title": "Kumartuli",
+        "subtitle": "Where gods are crafted with devotion"
+      },
+      "durgaPuja": {
+        "title": "Durga Puja",
+        "subtitle": "Experience the grandest celebration of Bengal"
+      },
+      "princepGhat": {
+        "title": "Princep Ghat",
+        "subtitle": "Where heritage meets the Hooghly"
+      }
+    }
+  },
+  "features": {
+    "badge": "Powered by AI & Blockchain",
+    "title": "Experience Kolkata",
+    "subtitle": "From tram tracks to tech stacks — Discover the City of Joy with AI-powered heritage experiences and blockchain-verified authenticity.",
+    "tramHeritage": {
+      "title": "Tram Heritage Tracker",
+      "description": "Track real-time tram locations and discover the history of Asia's oldest running tram network"
+    },
+    "pujoRoute": {
+      "title": "Pujo Route Planner",
+      "description": "AI-optimized pandal hopping with crowd predictions and cultural insights for Durga Puja"
+    },
+    "heritageWalk": {
+      "title": "Heritage Walk Audio",
+      "description": "AI-narrated walking tours of Victoria Memorial, Marble Palace, and historic Kolkata"
+    },
+    "artisanMarket": {
+      "title": "Verified Artisan Market",
+      "description": "Buy authentic Kumartuli crafts and tribal art with blockchain-verified authenticity"
+    },
+    "literaryKolkata": {
+      "title": "Literary Kolkata",
+      "description": "Explore College Street, Coffee House, and discover Tagore's Kolkata with curated tours"
+    },
+    "addaAI": {
+      "title": "Adda AI Companion",
+      "description": "Chat with an AI that knows Kolkata's soul - from mishti doi to metro shortcuts"
+    },
+    "startJourney": "Start Your Kolkata Journey",
+    "startJourneyNote": "Free heritage walk included • AI-powered itinerary • Blockchain verified"
+  },
+  "stats": {
+    "heritageSites": "Heritage Sites",
+    "pujoPandals": "Pujo Pandals",
+    "artisanCrafts": "Artisan Crafts",
+    "tramStops": "Tram Stops"
+  },
+  "heritage": {
+    "badge": "🏛️ Explore Heritage",
+    "title": "Timeless Heritage",
+    "subtitle": "Discover architectural marvels and historical landmarks that tell the story of Kolkata's glorious past",
+    "victoria": {
+      "title": "Victoria Memorial",
+      "description": "The crown jewel of Kolkata's heritage",
+      "location": "Queen's Way"
+    },
+    "howrah": {
+      "title": "Howrah Bridge",
+      "description": "The iconic gateway to the City of Joy",
+      "location": "Howrah"
+    },
+    "marble": {
+      "title": "Marble Palace",
+      "description": "A magnificent 19th-century mansion with European statues and rare paintings",
+      "location": "Muktaram Babu Street"
+    },
+    "kalighat": {
+      "title": "Kalighat Temple",
+      "description": "One of the 51 Shakti Peethas, the spiritual heart of Bengal",
+      "location": "Kalighat"
+    },
+    "collegeStreet": {
+      "title": "College Street",
+      "description": "The world's largest second-hand book market and literary hub",
+      "location": "College Street"
+    }
+  },
+  "pujo": {
+    "badge": "🪔 Durga Puja Experience",
+    "title": "The Grand Celebration",
+    "subtitle": "Experience the world's largest open-air art festival celebrating Goddess Durga",
+    "crowd": "Crowd",
+    "ekdalia": {
+      "title": "Ekdalia Evergreen",
+      "description": "Award-winning pandal known for innovative artistic themes and installations",
+      "location": "Ekdalia",
+      "highlight": "Theme: Art Installation"
+    },
+    "bagbazar": {
+      "title": "Bagbazar Sarbojanin",
+      "description": "One of the oldest and most traditional Durga Puja celebrations in Kolkata",
+      "location": "Bagbazar",
+      "highlight": "Traditional Pandal"
+    },
+    "kumartuli": {
+      "title": "Kumartuli Park",
+      "description": "Located in the heart of the idol-making district with authentic Bengali traditions",
+      "location": "Kumartuli",
+      "highlight": "Artisan District"
+    },
+    "collegeSquare": {
+      "title": "College Square",
+      "description": "Historic pandal in the heart of academic Kolkata with cultural programs",
+      "location": "College Square",
+      "highlight": "Historic Location"
+    },
+    "saltLake": {
+      "title": "Salt Lake FD Block",
+      "description": "Modern theme-based pandal showcasing contemporary art and architecture",
+      "location": "Salt Lake",
+      "highlight": "Modern Architecture"
+    },
+    "crowdLevels": {
+      "veryHigh": "Very High",
+      "high": "High",
+      "medium": "Medium",
+      "low": "Low"
+    }
+  },
+  "artisans": {
+    "badge": "🎭 Artisan Chronicles",
+    "title": "Master Craftsmen",
+    "subtitle": "Connect with skilled artisans preserving Bengal's rich craft heritage through generations",
+    "kumartuliIdols": {
+      "title": "Kumartuli Idol Makers",
+      "description": "Generations of artisans sculpting divine idols from clay and straw",
+      "craft": "Clay Idol Making"
+    },
+    "kalighatPata": {
+      "title": "Kalighat Patachitra",
+      "description": "Traditional scroll paintings depicting mythological stories and social satire",
+      "craft": "Scroll Painting"
+    },
+    "bankuraTerracotta": {
+      "title": "Bankura Terracotta",
+      "description": "Famous terracotta horses and tribal art from Bengal's heartland",
+      "craft": "Terracotta Horses"
+    },
+    "baluchariSilk": {
+      "title": "Baluchari Silk",
+      "description": "Exquisite silk sarees with intricate mythological motifs woven by master weavers",
+      "craft": "Silk Weaving"
+    },
+    "dokraMetal": {
+      "title": "Dokra Metal Craft",
+      "description": "Ancient lost-wax metal casting technique creating unique tribal art pieces",
+      "craft": "Metal Casting"
+    }
+  },
+  "testimonials": {
+    "badge": "💬 Real Stories from Kolkata Explorers",
+    "title": "What Explorers Say",
+    "subtitle": "Real experiences from travelers who discovered the soul of the City of Joy",
+    "verifiedReviews": "verified reviews"
+  },
+  "footer": {
+    "newsletter": {
+      "title": "Stay Connected with Kolkata",
+      "subtitle": "Get AI-powered heritage tips, Pujo updates, and exclusive offers",
+      "placeholder": "Enter your email",
+      "subscribeSuccess": "Welcome to Kolkata Heritage! 🪔"
+    },
+    "quickLinks": {
+      "title": "Explore",
+      "heritageSites": "Heritage Sites",
+      "durgaPuja": "Durga Puja",
+      "artisanMarketplace": "Artisan Marketplace",
+      "tramRoutes": "Tram Routes",
+      "foodGuide": "Food Guide",
+      "emergency": "Emergency"
+    },
+    "features": {
+      "title": "Features",
+      "aiPlanner": "AI Itinerary Planner",
+      "blockchain": "Blockchain Verification",
+      "audioTours": "Heritage Audio Tours",
+      "pujoOptimizer": "Pujo Route Optimizer",
+      "artisanConnect": "Artisan Connect",
+      "addaAI": "Adda AI Companion"
+    },
+    "contact": {
+      "title": "Contact"
+    },
+    "copyright": "© 2025 Kolkata Heritage. Made with ❤️ for the City of Joy",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "cookiePolicy": "Cookie Policy",
+    "poweredBy": "Powered by AI & Blockchain"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Welcome back",
+    "menuItems": {
+      "dashboard": "Dashboard",
+      "travelPlanning": "Travel Planning",
+      "aiItinerary": "AI Itinerary",
+ 
+      "pictureDeck": "Picture Deck",
+
+     
+      "nearbyPlaces": "Nearby Places",
+
+      "transport": "Transport",
+      "heritageWalk": "Heritage Walk",
+      "artisanChronicles": "Artisan Chronicles",
+      "recipeVault": "Recipe Vault",
+      "patachitraArchive": "Patachitra Archive",
+      "verifiedMarket": "Verified Market",
+      "heritageNFT": "Heritage NFT",
+      "pandalDonations": "Pandal Donations",
+      "bookings": "Bookings",
+      "interactiveMap": "Interactive Map",
+      "marketplace": "Marketplace",
+      "findGuides": "Find Guides",
+      "feedback": "Feedback",
+      "safety": "Safety",
+      "myProfile": "My Profile"
+    },
+    "stats": {
+      "placesVisited": "Places Visited",
+      "totalBookings": "Total Bookings",
+      "upcomingTrips": "Upcoming Trips",
+      "savedPlaces": "Saved Places"
+    },
+    "overview": {
+      "title": "Your Journey Overview",
+      "recentBookings": "Recent Bookings",
+      "upcomingTrips": "Upcoming Trips",
+      "recommendedPlaces": "Recommended For You",
+      "topGuides": "Top Rated Guides"
+    }
+  },
+  "language": {
+    "selectLanguage": "Select Language",
+    "translating": "Translating...",
+    "translated": "Translated",
+    "cached": "Cached",
+    "searchPlaceholder": "Search languages...",
+    "poweredBy": "Powered by LibreTranslate",
+    "languages": "languages",
+    "en": "English",
+    "hi": "Hindi",
+    "bn": "Bengali",
+    "fr": "French",
+    "es": "Spanish",
+    "ar": "Arabic",
+    "de": "German",
+    "ja": "Japanese",
+    "zh": "Chinese",
+    "ko": "Korean"
+  },
+  "errors": {
+    "translationFailed": "Translation failed. Using English.",
+    "networkError": "Network error. Please try again.",
+    "loadingFailed": "Failed to load translations.",
+    "somethingWrong": "Something went wrong"
+  },
+  "time": {
+    "hours": "hrs",
+    "hour": "hr",
+    "minutes": "min"
+  },
+  "aiTips": {
+    "header": "AI Kolkata Tips",
+    "live": "Live",
+    "tips": {
+      "tram36": "Tram Route 36 passes through the most heritage spots - perfect for a vintage tour!",
+      "pujoPandals": "Best Durga Puja pandals are in South Kolkata - start at Ekdalia Evergreen",
+      "coffeeHouse": "For authentic adda, visit Indian Coffee House on College Street since 1942",
+      "kumartuliArtisans": "Kumartuli artisans start work on idols 4 months before Pujo - visit in July!",
+      "collegeStreetBooks": "College Street has the largest second-hand book market in the world",
+      "princepGhatSunset": "Princep Ghat sunset views are magical - arrive 30 mins before sunset",
+      "biryani": "Try Arsalan's biryani or 6 Ballygunge Place for authentic Bengali cuisine",
+      "victoriaMemorial": "Victoria Memorial is best visited early morning to avoid crowds",
+      "yellowTaxis": "Yellow taxis follow meter + ₹10 rule for short distances in the city",
+      "jorasanko": "Jorasanko Thakur Bari has Tagore's original artworks - don't miss it!",
+      "kalighatTemple": "Kalighat Temple allows short visits - go during aarti for the experience",
+      "howrahBridge": "Howrah Bridge carries 100,000 vehicles daily - walk across at dawn!",
+      "parkStreet": "Park Street transforms during Christmas - best visited after 7 PM",
+      "rabindraSadan": "Rabindra Sadan hosts classical concerts - check schedule for baul performances",
+      "mishtiDoi": "Don't leave without trying mishti doi and sandesh from Balaram Mullick"
+    }
+  },
+  "testimonialsList": {
+    "anirban": {
+      "name": "Anirban Chatterjee",
+      "location": "Mumbai, India",
+      "comment": "The heritage walk through Kumartuli was magical! Watching artisans create Durga idols with such devotion - this app helped me discover the soul of Kolkata.",
+      "sentiment": "Amazing 🎭"
+    },
+    "sarah": {
+      "name": "Sarah Chen",
+      "location": "Singapore",
+      "comment": "The Durga Puja route planner was a lifesaver! Visited 15 pandals without getting lost. The AI knew exactly when to avoid crowds.",
+      "sentiment": "Incredible 🪔"
+    },
+    "rahul": {
+      "name": "Rahul Ghosh",
+      "location": "Bangalore, India",
+      "comment": "Born in Kolkata but this app showed me places I never knew existed! The College Street book walk was pure nostalgia.",
+      "sentiment": "Nostalgic 📚"
+    },
+    "emma": {
+      "name": "Emma Williams",
+      "location": "London, UK",
+      "comment": "The tram heritage tour was unforgettable! Riding through Esplanade at sunset while the audio guide narrated history - pure magic.",
+      "sentiment": "Magical 🚃"
+    },
+    "priya": {
+      "name": "Priya Mukherjee",
+      "location": "Delhi, India",
+      "comment": "Bought authentic Baluchari saree from verified artisans through this app. Blockchain certificate proves it's genuine handloom!",
+      "sentiment": "Verified ✓"
+    },
+    "james": {
+      "name": "James Thompson",
+      "location": "New York, USA",
+      "comment": "The Adda AI companion talked about Tagore like a true Kolkatan! Recommended the best mishti doi shop - exactly what locals prefer.",
+      "sentiment": "Authentic ☕"
+    }
+  }
+}

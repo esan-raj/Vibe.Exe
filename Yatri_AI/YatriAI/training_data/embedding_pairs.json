@@ -1,0 +1,327 @@
+[
+  {
+    "query": "heritage sites in Kolkata",
+    "document": "Victoria Memorial. Iconic white marble monument built in memory of Queen Victoria, featuring a museum with rare artifacts and beautiful gardens",
+    "label": 1.0
+  },
+  {
+    "query": "historical monuments",
+    "document": "Victoria Memorial. Iconic white marble monument built in memory of Queen Victoria, featuring a museum with rare artifacts and beautiful gardens",
+    "label": 1.0
+  },
+  {
+    "query": "places to visit Kolkata",
+    "document": "Victoria Memorial. Iconic white marble monument built in memory of Queen Victoria, featuring a museum with rare artifacts and beautiful gardens",
+    "label": 1.0
+  },
+  {
+    "query": "heritage attractions",
+    "document": "Victoria Memorial. Iconic white marble monument built in memory of Queen Victoria, featuring a museum with rare artifacts and beautiful gardens",
+    "label": 1.0
+  },
+  {
+    "query": "heritage sites in Kolkata",
+    "document": "Howrah Bridge. The iconic cantilever bridge over the Hooghly River, a symbol of Kolkata connecting the city to Howrah",
+    "label": 1.0
+  },
+  {
+    "query": "historical monuments",
+    "document": "Howrah Bridge. The iconic cantilever bridge over the Hooghly River, a symbol of Kolkata connecting the city to Howrah",
+    "label": 1.0
+  },
+  {
+    "query": "places to visit Kolkata",
+    "document": "Howrah Bridge. The iconic cantilever bridge over the Hooghly River, a symbol of Kolkata connecting the city to Howrah",
+    "label": 1.0
+  },
+  {
+    "query": "heritage attractions",
+    "document": "Howrah Bridge. The iconic cantilever bridge over the Hooghly River, a symbol of Kolkata connecting the city to Howrah",
+    "label": 1.0
+  },
+  {
+    "query": "heritage sites in Kolkata",
+    "document": "Princep Ghat. Beautiful riverside ghat with Palladian architecture, perfect for evening walks and boat rides on the Hooghly",
+    "label": 1.0
+  },
+  {
+    "query": "historical monuments",
+    "document": "Princep Ghat. Beautiful riverside ghat with Palladian architecture, perfect for evening walks and boat rides on the Hooghly",
+    "label": 1.0
+  },
+  {
+    "query": "places to visit Kolkata",
+    "document": "Princep Ghat. Beautiful riverside ghat with Palladian architecture, perfect for evening walks and boat rides on the Hooghly",
+    "label": 1.0
+  },
+  {
+    "query": "heritage attractions",
+    "document": "Princep Ghat. Beautiful riverside ghat with Palladian architecture, perfect for evening walks and boat rides on the Hooghly",
+    "label": 1.0
+  },
+  {
+    "query": "heritage sites in Kolkata",
+    "document": "Marble Palace. A 19th-century palatial mansion with an exquisite collection of art, antiques, and rare marble sculptures",
+    "label": 1.0
+  },
+  {
+    "query": "historical monuments",
+    "document": "Marble Palace. A 19th-century palatial mansion with an exquisite collection of art, antiques, and rare marble sculptures",
+    "label": 1.0
+  },
+  {
+    "query": "places to visit Kolkata",
+    "document": "Marble Palace. A 19th-century palatial mansion with an exquisite collection of art, antiques, and rare marble sculptures",
+    "label": 1.0
+  },
+  {
+    "query": "heritage attractions",
+    "document": "Marble Palace. A 19th-century palatial mansion with an exquisite collection of art, antiques, and rare marble sculptures",
+    "label": 1.0
+  },
+  {
+    "query": "heritage sites in Kolkata",
+    "document": "Jamdani Saree. Exquisite muslin weave with supplementary weft technique, UNESCO heritage craft",
+    "label": 1.0
+  },
+  {
+    "query": "historical monuments",
+    "document": "Jamdani Saree. Exquisite muslin weave with supplementary weft technique, UNESCO heritage craft",
+    "label": 1.0
+  },
+  {
+    "query": "places to visit Kolkata",
+    "document": "Jamdani Saree. Exquisite muslin weave with supplementary weft technique, UNESCO heritage craft",
+    "label": 1.0
+  },
+  {
+    "query": "heritage attractions",
+    "document": "Jamdani Saree. Exquisite muslin weave with supplementary weft technique, UNESCO heritage craft",
+    "label": 1.0
+  },
+  {
+    "query": "temples in Kolkata",
+    "document": "Dakshineswar Kali Temple. Famous Hindu temple dedicated to Goddess Kali, associated with Saint Ramakrishna Paramhansa",
+    "label": 1.0
+  },
+  {
+    "query": "religious sites",
+    "document": "Dakshineswar Kali Temple. Famous Hindu temple dedicated to Goddess Kali, associated with Saint Ramakrishna Paramhansa",
+    "label": 1.0
+  },
+  {
+    "query": "hindu temples",
+    "document": "Dakshineswar Kali Temple. Famous Hindu temple dedicated to Goddess Kali, associated with Saint Ramakrishna Paramhansa",
+    "label": 1.0
+  },
+  {
+    "query": "temples in Kolkata",
+    "document": "Kalighat Temple. One of the 51 Shakti Peethas, an ancient Hindu temple dedicated to Goddess Kali",
+    "label": 1.0
+  },
+  {
+    "query": "religious sites",
+    "document": "Kalighat Temple. One of the 51 Shakti Peethas, an ancient Hindu temple dedicated to Goddess Kali",
+    "label": 1.0
+  },
+  {
+    "query": "hindu temples",
+    "document": "Kalighat Temple. One of the 51 Shakti Peethas, an ancient Hindu temple dedicated to Goddess Kali",
+    "label": 1.0
+  },
+  {
+    "query": "book a guide for heritage walks",
+    "document": "Subhojit Chatterjee. Specializes in Heritage Walks, Photography Tours, Colonial History",
+    "label": 1.0
+  },
+  {
+    "query": "hire a heritage walks guide",
+    "document": "Subhojit Chatterjee. Heritage Walks, Photography Tours, Colonial History",
+    "label": 1.0
+  },
+  {
+    "query": "find a local guide",
+    "document": "Subhojit Chatterjee. Heritage Walks, Photography Tours, Colonial History",
+    "label": 1.0
+  },
+  {
+    "query": "book a guide for durga puja tours",
+    "document": "Dipanwita Roy. Specializes in Durga Puja Tours, Art & Culture, Food Walks",
+    "label": 1.0
+  },
+  {
+    "query": "hire a durga puja tours guide",
+    "document": "Dipanwita Roy. Durga Puja Tours, Art & Culture, Food Walks",
+    "label": 1.0
+  },
+  {
+    "query": "find a local guide",
+    "document": "Dipanwita Roy. Durga Puja Tours, Art & Culture, Food Walks",
+    "label": 1.0
+  },
+  {
+    "query": "book a guide for literary tours",
+    "document": "Arnab Mukherjee. Specializes in Literary Tours, Coffee House History, College Street",
+    "label": 1.0
+  },
+  {
+    "query": "hire a literary tours guide",
+    "document": "Arnab Mukherjee. Literary Tours, Coffee House History, College Street",
+    "label": 1.0
+  },
+  {
+    "query": "find a local guide",
+    "document": "Arnab Mukherjee. Literary Tours, Coffee House History, College Street",
+    "label": 1.0
+  },
+  {
+    "query": "book a guide for tram heritage",
+    "document": "Rima Sen. Specializes in Tram Heritage, Street Food, Night Photography",
+    "label": 1.0
+  },
+  {
+    "query": "hire a tram heritage guide",
+    "document": "Rima Sen. Tram Heritage, Street Food, Night Photography",
+    "label": 1.0
+  },
+  {
+    "query": "find a local guide",
+    "document": "Rima Sen. Tram Heritage, Street Food, Night Photography",
+    "label": 1.0
+  },
+  {
+    "query": "book a guide for kumartuli tours",
+    "document": "Sourav Ghosh. Specializes in Kumartuli Tours, Artisan Workshops, Idol Making",
+    "label": 1.0
+  },
+  {
+    "query": "hire a kumartuli tours guide",
+    "document": "Sourav Ghosh. Kumartuli Tours, Artisan Workshops, Idol Making",
+    "label": 1.0
+  },
+  {
+    "query": "find a local guide",
+    "document": "Sourav Ghosh. Kumartuli Tours, Artisan Workshops, Idol Making",
+    "label": 1.0
+  },
+  {
+    "query": "plan colonial heritage walk",
+    "document": "Colonial Heritage Walk. Activities: Victoria Memorial Tour Howrah Bridge Walk St. Paul\\'s Cathedral Writer\\'s Building",
+    "label": 1.0
+  },
+  {
+    "query": "itinerary for victoria memorial tour",
+    "document": "Colonial Heritage Walk. Victoria Memorial Tour Howrah Bridge Walk St. Paul\\'s Cathedral Writer\\'s Building",
+    "label": 1.0
+  },
+  {
+    "query": "travel plan",
+    "document": "Colonial Heritage Walk. Victoria Memorial Tour Howrah Bridge Walk St. Paul\\'s Cathedral Writer\\'s Building",
+    "label": 1.0
+  },
+  {
+    "query": "plan durga puja special",
+    "document": "Durga Puja Special. Activities: Kumartuli Artisan Visit Top 20 Pandal Hopping Dhunuchi Naach Bhog Prasad Experience",
+    "label": 1.0
+  },
+  {
+    "query": "itinerary for kumartuli artisan visit",
+    "document": "Durga Puja Special. Kumartuli Artisan Visit Top 20 Pandal Hopping Dhunuchi Naach Bhog Prasad Experience",
+    "label": 1.0
+  },
+  {
+    "query": "travel plan",
+    "document": "Durga Puja Special. Kumartuli Artisan Visit Top 20 Pandal Hopping Dhunuchi Naach Bhog Prasad Experience",
+    "label": 1.0
+  },
+  {
+    "query": "plan literary & culinary kolkata",
+    "document": "Literary & Culinary Kolkata. Activities: College Street Book Hunt Coffee House Adda Park Street Food Walk Mishti Doi Tasting",
+    "label": 1.0
+  },
+  {
+    "query": "itinerary for college street book hunt",
+    "document": "Literary & Culinary Kolkata. College Street Book Hunt Coffee House Adda Park Street Food Walk Mishti Doi Tasting",
+    "label": 1.0
+  },
+  {
+    "query": "travel plan",
+    "document": "Literary & Culinary Kolkata. College Street Book Hunt Coffee House Adda Park Street Food Walk Mishti Doi Tasting",
+    "label": 1.0
+  },
+  {
+    "query": "heritage sites in Kolkata",
+    "document": "Random restaurant in Mumbai serving biryani",
+    "label": 0.0
+  },
+  {
+    "query": "temples",
+    "document": "Shopping mall with multiple stores",
+    "label": 0.0
+  },
+  {
+    "query": "heritage",
+    "document": "Modern office building with glass facade",
+    "label": 0.0
+  },
+  {
+    "query": "book guide",
+    "document": "Hotel booking website",
+    "label": 0.0
+  },
+  {
+    "query": "plan itinerary",
+    "document": "Flight booking system",
+    "label": 0.0
+  },
+  {
+    "query": "heritage sites",
+    "document": "Online shopping website",
+    "label": 0.0
+  },
+  {
+    "query": "temples in Kolkata",
+    "document": "Restaurant menu with prices",
+    "label": 0.0
+  },
+  {
+    "query": "historical monuments",
+    "document": "Tech company office",
+    "label": 0.0
+  },
+  {
+    "query": "book a guide",
+    "document": "E-commerce product page",
+    "label": 0.0
+  },
+  {
+    "query": "plan trip",
+    "document": "Weather forecast website",
+    "label": 0.0
+  },
+  {
+    "query": "heritage",
+    "document": "Social media platform",
+    "label": 0.0
+  },
+  {
+    "query": "temples",
+    "document": "News article about sports",
+    "label": 0.0
+  },
+  {
+    "query": "guide booking",
+    "document": "Movie ticket booking",
+    "label": 0.0
+  },
+  {
+    "query": "itinerary",
+    "document": "Recipe website",
+    "label": 0.0
+  },
+  {
+    "query": "heritage sites",
+    "document": "Job listing website",
+    "label": 0.0
+  }
+]

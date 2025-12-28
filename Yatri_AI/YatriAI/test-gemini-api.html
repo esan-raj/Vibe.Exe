@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Gemini API</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .container { max-width: 800px; margin: 0 auto; }
+        button { padding: 10px 20px; background: #4285f4; color: white; border: none; border-radius: 5px; cursor: pointer; }
+        button:hover { background: #3367d6; }
+        .result { margin-top: 20px; padding: 15px; background: #f5f5f5; border-radius: 5px; }
+        .loading { color: #666; }
+        .error { color: red; }
+        .success { color: green; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧪 Gemini AI Cost Estimation Test</h1>
+        <p>This page tests the Gemini AI integration for cost estimation.</p>
+        
+        <button onclick="testCostEstimation()">🚀 Test Cost Estimation</button>
+        
+        <div id="result" class="result" style="display: none;">
+            <h3>Result:</h3>
+            <pre id="output"></pre>
+        </div>
+    </div>
+
+    <script type="module">
+        import { GoogleGenerativeAI } from 'https://esm.run/@google/generative-ai';
+
+        window.testCostEstimation = async function() {
+            const resultDiv = document.getElementById('result');
+            const outputPre = document.getElementById('output');
+            
+            resultDiv.style.display = 'block';
+            outputPre.innerHTML = '<span class="loading">🔄 Testing Gemini AI...</span>';
+            
+            try {
+                const genAI = new GoogleGenerativeAI('AIzaSyCIa4n-lpYe8Cw5XCUqMvRnk9EbYV8_oWc');
+                const model = genAI.getGenerativeModel({ model: 'gemini-pro' });
+                
+                const prompt = `
+You are a travel cost estimation expert for Kolkata, India. Provide a detailed cost estimation in Indian Rupees (₹) for visiting Victoria Memorial.
+
+**Destination Details:**
+- Name: Victoria Memorial
+- Address: Queens Way, Maidan, Kolkata, West Bengal 700071
+- Category: heritage
+- Duration: 3 hours
+- Visit Time: 09:00
+- Priority: high
+- Group Size: 2 people
+- Travel Style: mid-range
+
+**Response Format (JSON):**
+{
+  "estimatedCost": [total cost in rupees],
+  "breakdown": {
+    "entryFee": [amount or 0],
+    "transportation": [local transport cost],
+    "food": [food/refreshment cost],
+    "shopping": [typical shopping cost],
+    "guide": [guide fee if applicable],
+    "miscellaneous": [other expenses]
+  },
+  "explanation": "[detailed explanation of cost calculation]",
+  "tips": ["[tip 1]", "[tip 2]", "[tip 3]"],
+  "confidence": "[high/medium/low]"
+}
+
+Provide realistic, current pricing for mid-range travel style.
+                `;
+                
+                const result = await model.generateContent(prompt);
+                const response = await result.response;
+                const text = response.text();
+                
+                outputPre.innerHTML = `<span class="success">✅ Success!</span>\n\n${text}`;
+                
+            } catch (error) {
+                outputPre.innerHTML = `<span class="error">❌ Error: ${error.message}</span>`;
+                console.error('Test failed:', error);
+            }
+        };
+    </script>
+</body>
+</html>

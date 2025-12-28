@@ -1,0 +1,1693 @@
+/* Kolkata Heritage - Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&family=Tiro+Bangla:ital@0;1&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom scrollbar styles */
+.scrollbar-thin {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(156 163 175) transparent;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: rgb(156 163 175);
+  border-radius: 3px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(107 114 128);
+}
+
+.dark .scrollbar-thin {
+  scrollbar-color: rgb(75 85 99) transparent;
+}
+
+.dark .scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: rgb(75 85 99);
+}
+
+.dark .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(107 114 128);
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    
+    /* Kolkata Heritage Colors */
+    --kolkata-yellow: #FFB800;
+    --kolkata-gold: #D4A015;
+    --kolkata-terracotta: #C45C26;
+    --kolkata-sindoor: #E23D28;
+    --kolkata-vermillion: #FF4136;
+    --kolkata-maroon: #7B2D26;
+    --kolkata-purple: #4A235A;
+    --kolkata-blue: #1E3A5F;
+    --kolkata-hooghly: #1A5276;
+    --kolkata-maidan: #2D5A27;
+    --kolkata-sepia: #8B7355;
+    --kolkata-cream: #FFFEF7;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+  }
+}
+
+@layer utilities {
+  /* Magic UI Utilities */
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Animated gradient text - Kolkata Colors */
+  .animate-gradient {
+    background-size: 300% 100%;
+    animation: gradient 6s linear infinite;
+  }
+
+  /* Shimmer effect */
+  .shimmer {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .shimmer::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 184, 0, 0.2);
+    animation: shimmer 2s infinite;
+    opacity: 0.5;
+  }
+
+  /* Glow effect for cards - Kolkata theme */
+  .glow-card {
+    position: relative;
+  }
+
+  .glow-card::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    background: #FFB800;
+    border-radius: inherit;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .glow-card:hover::before {
+    opacity: 1;
+  }
+
+  /* Glass morphism */
+  .glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+
+  .glass-dark {
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  /* Heritage glass - cream tinted */
+  .glass-heritage {
+    background: rgba(255, 254, 247, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 184, 0, 0.2);
+  }
+
+  /* Noise texture overlay */
+  .noise {
+    position: relative;
+  }
+
+  .noise::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    opacity: 0.05;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  /* Spotlight effect */
+  .spotlight {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .spotlight::after {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    background: rgba(255, 184, 0, 0.1);
+    border-radius: 50%;
+    animation: rotate 10s linear infinite;
+  }
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* Text gradient - Kolkata Heritage - More subtle */
+  .text-gradient {
+    color: #C45C26;
+    text-shadow: 0 1px 2px rgba(196, 92, 38, 0.2);
+  }
+
+  .dark .text-gradient {
+    color: #FFB800;
+    text-shadow: 0 1px 2px rgba(255, 184, 0, 0.2);
+  }
+
+  /* Durga text - solid color */
+  .text-gradient-durga {
+    color: #E23D28;
+    text-shadow: 0 1px 2px rgba(226, 61, 40, 0.2);
+  }
+
+  .dark .text-gradient-durga {
+    color: #FF4136;
+    text-shadow: 0 1px 2px rgba(255, 65, 54, 0.2);
+  }
+
+  /* Border styling - solid with subtle inner shadow */
+  .border-gradient {
+    position: relative;
+    background: var(--bg-color, white);
+    border: 2px solid #FFB800;
+    box-shadow: inset 0 1px 3px rgba(255, 184, 0, 0.1);
+  }
+
+  .dark .border-gradient {
+    --bg-color: rgb(31, 41, 55);
+    border-color: #D4A015;
+    box-shadow: inset 0 1px 3px rgba(212, 160, 21, 0.1);
+  }
+
+  /* Scrollbar styling - HIDDEN (Kolkata theme) */
+  .custom-scrollbar::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+
+  .custom-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  /* Animated underline - solid Kolkata colors */
+  .animated-underline {
+    position: relative;
+    display: inline-block;
+  }
+
+  .animated-underline::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 50%;
+    background: #FFB800;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+    box-shadow: 0 1px 2px rgba(255, 184, 0, 0.3);
+  }
+
+  .animated-underline:hover::after {
+    width: 100%;
+    background: #E23D28;
+    box-shadow: 0 1px 2px rgba(226, 61, 40, 0.3);
+  }
+
+  /* Pulse ring animation - Tram Yellow */
+  .pulse-ring {
+    position: relative;
+  }
+
+  .pulse-ring::before {
+    content: '';
+    position: absolute;
+    inset: -4px;
+    border-radius: inherit;
+    border: 2px solid #FFB800;
+    animation: pulse-ring-animation 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+  }
+
+  @keyframes pulse-ring-animation {
+    0% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(1.3);
+    }
+  }
+
+  /* Floating elements */
+  .float-animation {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .float-animation-delayed {
+    animation: float 6s ease-in-out infinite;
+    animation-delay: -3s;
+  }
+
+  /* Hide scrollbar but keep functionality */
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* ===== KOLKATA HERITAGE PATTERNS ===== */
+
+  /* Alpona Pattern Border */
+  .alpona-border {
+    position: relative;
+  }
+
+  .alpona-border::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border: 3px solid #FFB800;
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  /* Terracotta texture */
+  .terracotta-texture {
+    background: rgba(196, 92, 38, 0.05);
+    background-size: 20px 20px;
+  }
+
+  /* Hooghly wave pattern */
+  .hooghly-waves {
+    background: rgba(26, 82, 118, 0.1);
+    animation: river-flow 15s linear infinite;
+  }
+
+  @keyframes river-flow {
+    from { background-position: 0 0; }
+    to { background-position: 200px 0; }
+  }
+
+  /* Tram tracks pattern */
+  .tram-tracks {
+    background: rgba(139, 115, 85, 0.2);
+    background-size: 20px 20px;
+  }
+
+  /* Dhunuchi flame glow */
+  .dhunuchi-glow {
+    box-shadow: 
+      0 0 20px rgba(255, 184, 0, 0.4),
+      0 0 40px rgba(226, 61, 40, 0.3),
+      0 0 60px rgba(255, 65, 54, 0.2);
+    animation: flame-glow 1s ease-in-out infinite alternate;
+  }
+
+  @keyframes flame-glow {
+    from {
+      box-shadow: 
+        0 0 20px rgba(255, 184, 0, 0.4),
+        0 0 40px rgba(226, 61, 40, 0.3);
+    }
+    to {
+      box-shadow: 
+        0 0 30px rgba(255, 184, 0, 0.6),
+        0 0 60px rgba(226, 61, 40, 0.4);
+    }
+  }
+
+  /* Heritage paper texture */
+  .heritage-paper {
+    background-color: #FFFEF7;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%238B7355' fill-opacity='0.05' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+  }
+
+  /* Victoria Memorial marble */
+  .marble-texture {
+    background: #FFFEF7;
+  }
+
+  /* Bengali script decoration */
+  .bengali-accent::first-letter {
+    font-family: 'Tiro Bangla', serif;
+    font-size: 1.5em;
+    color: #C45C26;
+  }
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection styling - Kolkata Gold */
+::selection {
+  background: rgba(255, 184, 0, 0.3);
+  color: inherit;
+}
+
+::-moz-selection {
+  background: rgba(255, 184, 0, 0.3);
+  color: inherit;
+}
+
+/* Focus visible styling - Tram Yellow */
+:focus-visible {
+  outline: 2px solid #FFB800;
+  outline-offset: 2px;
+}
+
+/* Improved text rendering */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-family: 'Hind Siliguri', 'Inter', system-ui, sans-serif;
+}
+
+/* Bengali text helper */
+.bengali {
+  font-family: 'Hind Siliguri', 'Tiro Bangla', sans-serif;
+}
+
+/* Heritage headings */
+h1, h2, h3 {
+  font-family: 'Playfair Display', 'Poppins', serif;
+}
+
+/* Tram icon animation */
+.tram-animate {
+  animation: tramMove 20s linear infinite;
+}
+
+  /* Kolkata Button Styles - Solid Colors */
+.btn-kolkata {
+  background: #FFB800;
+  color: #1a1a1a;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 184, 0, 0.25);
+  border: 1px solid rgba(212, 160, 21, 0.3);
+}
+
+.btn-kolkata:hover {
+  background: #D4A015;
+  box-shadow: 0 6px 20px rgba(255, 184, 0, 0.35);
+  transform: translateY(-2px);
+  border-color: rgba(212, 160, 21, 0.5);
+}
+
+.btn-durga {
+  background: #E23D28;
+  color: white;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(226, 61, 40, 0.25);
+  border: 1px solid rgba(255, 65, 54, 0.3);
+}
+
+.btn-durga:hover {
+  background: #FF4136;
+  box-shadow: 0 6px 20px rgba(226, 61, 40, 0.35);
+  transform: translateY(-2px);
+  border-color: rgba(255, 65, 54, 0.5);
+}
+
+  /* Card hover effect - Heritage style with solid colors */
+.card-heritage {
+  transition: all 0.3s ease;
+  border: 1px solid rgba(139, 115, 85, 0.2);
+  background: rgba(255, 254, 247, 0.8);
+}
+
+.card-heritage:hover {
+  border-color: rgba(255, 184, 0, 0.6);
+  box-shadow: 0 20px 40px rgba(139, 115, 85, 0.15);
+  background: rgba(255, 254, 247, 1);
+  transform: translateY(-2px);
+}
+
+.dark .card-heritage {
+  background: rgba(31, 41, 55, 0.8);
+  border-color: rgba(139, 115, 85, 0.3);
+}
+
+.dark .card-heritage:hover {
+  background: rgba(31, 41, 55, 1);
+  border-color: rgba(212, 160, 21, 0.6);
+}
+
+/* ===== GOOGLE TRANSLATE INTEGRATION ===== */
+
+/* Hide Google Translate banner and branding */
+.goog-te-banner-frame {
+  display: none !important;
+}
+
+.goog-te-menu-frame {
+  max-height: 400px !important;
+  overflow-y: auto !important;
+  border-radius: 12px !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Style the Google Translate dropdown */
+.goog-te-combo {
+  background: white !important;
+  border: 1px solid #e5e7eb !important;
+  border-radius: 8px !important;
+  padding: 8px 12px !important;
+  font-size: 14px !important;
+  color: #374151 !important;
+  outline: none !important;
+}
+
+.goog-te-combo:focus {
+  border-color: #3b82f6 !important;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1) !important;
+}
+
+/* Dark mode support for Google Translate */
+.dark .goog-te-combo {
+  background: #374151 !important;
+  border-color: #4b5563 !important;
+  color: #f9fafb !important;
+}
+
+.dark .goog-te-menu-frame {
+  background: #1f2937 !important;
+  border: 1px solid #374151 !important;
+}
+
+/* Hide the Google Translate gadget completely when using custom UI */
+.goog-te-gadget {
+  display: none !important;
+}
+
+.goog-te-gadget > span {
+  display: none !important;
+}
+
+.goog-te-gadget > div {
+  display: none !important;
+}
+
+/* Ensure translated content maintains proper styling */
+.translated-ltr {
+  direction: ltr !important;
+}
+
+.translated-rtl {
+  direction: rtl !important;
+}
+
+/* Fix for Google Translate affecting layout */
+body {
+  top: 0 !important;
+  position: static !important;
+}
+
+/* Style adjustments for translated text */
+.goog-text-highlight {
+  background: rgba(255, 184, 0, 0.2) !important;
+  border-radius: 4px !important;
+  padding: 2px 4px !important;
+}
+
+/* Ensure Google Translate doesn't break responsive design */
+.goog-te-spinner-pos {
+  display: none !important;
+}
+
+/* Custom loading indicator for translation */
+.translate-loading {
+  position: relative;
+}
+
+.translate-loading::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  margin: -10px 0 0 -10px;
+  border: 2px solid #f3f3f3;
+  border-top: 2px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Ensure proper z-index for translate elements */
+.translate-dropdown {
+  z-index: 9999 !important;
+}
+
+/* Language selector styling */
+.language-badge {
+  background: #3b82f6;
+  color: white;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+  .translate-dropdown {
+    width: 280px !important;
+    max-width: calc(100vw - 32px) !important;
+  }
+}
+
+/* Accessibility improvements */
+.translate-button:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* Smooth transitions for translate UI */
+.translate-menu-enter {
+  opacity: 0;
+  transform: scale(0.95) translateY(-10px);
+}
+
+.translate-menu-enter-active {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+  transition: all 200ms ease-out;
+}
+
+.translate-menu-exit {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
+
+.translate-menu-exit-active {
+  opacity: 0;
+  transform: scale(0.95) translateY(-10px);
+  transition: all 150ms ease-in;
+}
+/* Additional Google Translate fixes */
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  overflow: hidden !important;
+}
+
+/* Prevent Google Translate from adding top margin to body */
+body.goog-te-hl {
+  top: 0 !important;
+  position: static !important;
+}
+
+/* Hide any Google branding */
+.goog-te-gadget-icon {
+  display: none !important;
+}
+
+.goog-te-gadget-simple .goog-te-menu-value {
+  color: transparent !important;
+}
+
+.goog-logo-link {
+  display: none !important;
+}
+
+.goog-te-gadget-simple {
+  display: none !important;
+}
+
+#google_translate_element {
+  display: none !important;
+}
+
+/* Remove any iframe borders or margins */
+.goog-te-menu-frame iframe {
+  border: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Ensure proper font rendering for translated text */
+.goog-te-combo option {
+  font-family: inherit;
+}
+
+/* Style the translate element container */
+.google-translate-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Ensure translated content is readable */
+.goog-text-highlight {
+  background-color: rgba(255, 255, 0, 0.3) !important;
+  color: inherit !important;
+}
+
+/* Hide Google Translate attribution */
+.goog-te-gadget-simple .goog-te-menu-value span:first-child {
+  display: none;
+}
+
+.goog-te-gadget-simple .goog-te-menu-value:before {
+  content: 'Translate';
+}
+/* ===== FAST BROWSER TRANSLATION ===== */
+
+/* Completely hide Google Translate branding and elements */
+.goog-te-banner-frame,
+.goog-te-banner-frame.skiptranslate,
+.goog-te-gadget,
+.goog-te-gadget-simple,
+.goog-te-gadget-icon,
+.goog-logo-link,
+#google_translate_element .goog-te-gadget-simple,
+#google_translate_element .goog-te-gadget-simple .goog-te-menu-value,
+#google_translate_element .goog-te-gadget-simple .goog-te-menu-value span {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  height: 0 !important;
+  width: 0 !important;
+  overflow: hidden !important;
+  position: absolute !important;
+  left: -9999px !important;
+}
+
+/* Prevent Google Translate from affecting page layout */
+body {
+  top: 0 !important;
+  position: static !important;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+body.goog-te-hl {
+  top: 0 !important;
+  position: static !important;
+  margin-top: 0 !important;
+}
+
+/* Hide the select element but keep it functional */
+#google_translate_element {
+  position: absolute !important;
+  left: -9999px !important;
+  top: -9999px !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  opacity: 0 !important;
+}
+
+#google_translate_element select.goog-te-combo {
+  position: absolute !important;
+  left: -9999px !important;
+  top: -9999px !important;
+  width: 1px !important;
+  height: 1px !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+/* Ensure translated content is properly styled */
+.goog-text-highlight {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* Fast translation animations */
+.translate-fade-in {
+  animation: translateFadeIn 0.3s ease-in-out;
+}
+
+@keyframes translateFadeIn {
+  from {
+    opacity: 0.7;
+    transform: translateY(2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Language selector styling */
+.language-selector-item {
+  transition: all 0.2s ease;
+}
+
+.language-selector-item:hover {
+  background: rgba(59, 130, 246, 0.1);
+  transform: translateX(4px);
+}
+
+.language-selector-item.active {
+  background: rgba(59, 130, 246, 0.15);
+  border-left: 3px solid #3b82f6;
+}
+
+/* Floating translate button pulse effect */
+.floating-translate-pulse {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(59, 130, 246, 0);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .translate-dropdown {
+    width: 90vw !important;
+    max-width: 320px !important;
+    right: 5vw !important;
+  }
+  
+  .floating-translate-button {
+    bottom: 20px !important;
+    right: 20px !important;
+    width: 56px !important;
+    height: 56px !important;
+  }
+}
+
+/* Dark mode enhancements */
+.dark .language-selector-item:hover {
+  background: rgba(59, 130, 246, 0.2);
+}
+
+.dark .language-selector-item.active {
+  background: rgba(59, 130, 246, 0.25);
+}
+
+/* Ensure no Google Translate interference with custom styles */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0 !important;
+  padding: 0 !important;
+  top: 0 !important;
+  position: static !important;
+}
+
+/* Hide any remaining Google Translate UI elements */
+iframe[src*="translate.google"] {
+  display: none !important;
+}
+
+.goog-te-spinner-pos {
+  display: none !important;
+}
+
+.goog-te-menu-frame {
+  display: none !important;
+}
+
+/* Smooth language transition effect */
+.page-translate-transition {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.page-translate-transition.translating {
+  opacity: 0.9;
+}
+/* ===== WORKING GOOGLE TRANSLATE - LOCALHOST FIX ===== */
+
+/* Ensure Google Translate works on localhost */
+#google_translate_element {
+  position: absolute !important;
+  left: -9999px !important;
+  top: -9999px !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+/* Keep the select element functional but hidden */
+#google_translate_element select.goog-te-combo {
+  position: absolute !important;
+  left: -9999px !important;
+  top: -9999px !important;
+  width: 1px !important;
+  height: 1px !important;
+  opacity: 0 !important;
+  pointer-events: auto !important;
+}
+
+/* Force hide all Google Translate UI elements */
+.goog-te-banner-frame,
+.goog-te-banner-frame.skiptranslate,
+.goog-te-gadget,
+.goog-te-gadget-simple,
+.goog-te-gadget-icon,
+.goog-logo-link,
+#google_translate_element .goog-te-gadget-simple,
+#google_translate_element .goog-te-gadget-simple .goog-te-menu-value,
+#google_translate_element .goog-te-gadget-simple .goog-te-menu-value span,
+.goog-te-menu-frame {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  height: 0 !important;
+  width: 0 !important;
+  overflow: hidden !important;
+  position: absolute !important;
+  left: -9999px !important;
+  top: -9999px !important;
+}
+
+/* Prevent Google Translate from affecting page layout */
+body,
+body.goog-te-hl {
+  top: 0 !important;
+  position: static !important;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Ensure translated content is properly styled */
+.goog-text-highlight {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* Hide any remaining Google Translate UI */
+iframe[src*="translate.google"] {
+  display: none !important;
+}
+
+.goog-te-spinner-pos {
+  display: none !important;
+}
+
+/* Working translate button styles */
+.working-translate-ready {
+  color: #10b981 !important;
+}
+
+.working-translate-error {
+  color: #ef4444 !important;
+}
+
+.working-translate-loading {
+  opacity: 0.7;
+  animation: pulse 2s infinite;
+}
+
+/* Language selection hover effects */
+.language-item {
+  transition: all 0.2s ease;
+}
+
+.language-item:hover {
+  background: rgba(59, 130, 246, 0.1) !important;
+  transform: translateX(2px);
+}
+
+.language-item.active {
+  background: rgba(59, 130, 246, 0.15) !important;
+  border-left: 3px solid #3b82f6;
+}
+
+/* Ensure proper z-index for dropdowns */
+.translate-dropdown {
+  z-index: 9999 !important;
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .translate-dropdown {
+    width: 90vw !important;
+    max-width: 300px !important;
+    right: 5vw !important;
+  }
+  
+  .floating-translate {
+    bottom: 20px !important;
+    right: 20px !important;
+  }
+}
+
+/* Dark mode enhancements */
+.dark .language-item:hover {
+  background: rgba(59, 130, 246, 0.2) !important;
+}
+
+.dark .language-item.active {
+  background: rgba(59, 130, 246, 0.25) !important;
+}
+/* ===== INSTANT TRANSLATION - GOOGLE STYLE ===== */
+
+/* Translation frame (hidden) */
+#translation-frame {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  border: none !important;
+  position: absolute !important;
+  left: -9999px !important;
+  top: -9999px !important;
+}
+
+/* Translated page styles */
+body.translated {
+  transition: all 0.3s ease;
+}
+
+body.translated-ar,
+body.translated-he,
+body.translated-fa,
+body.translated-ur {
+  direction: rtl;
+}
+
+body.rtl {
+  direction: rtl;
+}
+
+body.rtl * {
+  text-align: right;
+}
+
+/* Instant translate button - Google style */
+.instant-translate-btn {
+  background: linear-gradient(135deg, #10b981, #3b82f6);
+  color: white;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  transition: all 0.2s ease;
+}
+
+.instant-translate-btn:hover {
+  background: linear-gradient(135deg, #059669, #2563eb);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+  transform: translateY(-1px);
+}
+
+/* Language selection items */
+.instant-lang-item {
+  transition: all 0.2s ease;
+}
+
+.instant-lang-item:hover {
+  background: rgba(16, 185, 129, 0.1) !important;
+  transform: translateX(3px);
+}
+
+.instant-lang-item.active {
+  background: rgba(16, 185, 129, 0.15) !important;
+  border-left: 3px solid #10b981;
+}
+
+/* Browser instruction button */
+.browser-instruction-btn {
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  transition: all 0.2s ease;
+}
+
+.browser-instruction-btn:hover {
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  transform: translateY(-1px);
+}
+
+/* Floating translate button - Google style */
+.floating-instant-translate {
+  background: linear-gradient(135deg, #10b981, #3b82f6);
+  box-shadow: 0 8px 25px rgba(16, 185, 129, 0.3);
+  animation: float 3s ease-in-out infinite;
+}
+
+.floating-instant-translate:hover {
+  background: linear-gradient(135deg, #059669, #2563eb);
+  box-shadow: 0 12px 35px rgba(16, 185, 129, 0.4);
+  animation-play-state: paused;
+  transform: translateY(-2px);
+}
+
+/* Translation status indicator */
+.translation-status {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: rgba(16, 185, 129, 0.9);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  z-index: 10000;
+  animation: slideInRight 0.3s ease;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .instant-translate-dropdown {
+    width: 90vw !important;
+    max-width: 320px !important;
+    right: 5vw !important;
+  }
+  
+  .floating-instant-translate {
+    bottom: 20px !important;
+    right: 20px !important;
+    width: 56px !important;
+    height: 56px !important;
+  }
+  
+  .translation-status {
+    top: 10px;
+    right: 10px;
+    font-size: 11px;
+    padding: 6px 12px;
+  }
+}
+
+/* Dark mode enhancements */
+.dark .instant-lang-item:hover {
+  background: rgba(16, 185, 129, 0.2) !important;
+}
+
+.dark .instant-lang-item.active {
+  background: rgba(16, 185, 129, 0.25) !important;
+}
+
+.dark .translation-status {
+  background: rgba(16, 185, 129, 0.8);
+}
+
+/* Smooth page transition during translation */
+.page-translating {
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+
+/* Success animation */
+.translate-success {
+  animation: translateSuccess 0.5s ease;
+}
+
+@keyframes translateSuccess {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Language flag animations */
+.flag-bounce {
+  animation: flagBounce 0.6s ease;
+}
+
+@keyframes flagBounce {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+/* Auto Translation Styles */
+.auto-translated {
+  position: relative;
+}
+
+.auto-translated::before {
+  content: "🌐 Auto Translated";
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background: linear-gradient(135deg, #3b82f6, #10b981);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  z-index: 10000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Google Translate Widget Customization */
+.goog-te-banner-frame {
+  display: none !important;
+}
+
+.goog-te-menu-value {
+  padding: 3px !important;
+}
+
+.goog-te-gadget-simple {
+  background-color: transparent !important;
+  border-left: none !important;
+  border-top: none !important;
+  border-bottom: none !important;
+  border-right: none !important;
+  font-size: 10pt !important;
+  display: inline-block !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  cursor: pointer !important;
+}
+
+.goog-te-gadget-simple .goog-te-menu-value {
+  font-size: 12px !important;
+  color: #666 !important;
+  font-family: inherit !important;
+}
+
+.goog-te-gadget-simple .goog-te-menu-value:hover {
+  text-decoration: none !important;
+}
+
+.goog-te-gadget-simple .goog-te-menu-value span {
+  color: #4285f4 !important;
+}
+
+.goog-te-gadget-simple .goog-te-menu-value span:hover {
+  color: #1a73e8 !important;
+}
+
+/* Hide Google Translate top frame */
+body {
+  top: 0px !important;
+}
+
+#google_translate_element {
+  position: fixed;
+  top: -1000px;
+  left: -1000px;
+  visibility: hidden;
+}
+
+/* Auto translate loading indicator */
+.auto-translate-loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  z-index: 10001;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.auto-translate-loading .spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ffffff40;
+  border-top: 2px solid #ffffff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+/* Interactive Loading Screen Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { 
+    box-shadow: 0 0 20px rgba(255, 184, 0, 0.3);
+    transform: scale(1);
+  }
+  50% { 
+    box-shadow: 0 0 40px rgba(255, 184, 0, 0.6);
+    transform: scale(1.05);
+  }
+}
+
+@keyframes sparkle {
+  0%, 100% { opacity: 0; transform: scale(0) rotate(0deg); }
+  50% { opacity: 1; transform: scale(1) rotate(180deg); }
+}
+
+@keyframes heritage-float {
+  0% { transform: translateY(0px) rotate(0deg); }
+  33% { transform: translateY(-15px) rotate(120deg); }
+  66% { transform: translateY(-5px) rotate(240deg); }
+  100% { transform: translateY(0px) rotate(360deg); }
+}
+
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+/* Loading screen specific classes */
+.loading-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.loading-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.loading-sparkle {
+  animation: sparkle 1.5s ease-in-out infinite;
+}
+
+.loading-heritage-float {
+  animation: heritage-float 8s linear infinite;
+}
+
+.loading-typewriter {
+  overflow: hidden;
+  border-right: 2px solid #FFB800;
+  white-space: nowrap;
+  animation: typewriter 2s steps(40, end), blink 1s step-end infinite;
+}
+
+/* Initial Loading Animations */
+@keyframes initial-fade-in {
+  from { 
+    opacity: 0; 
+    transform: translateY(30px) scale(0.9); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0) scale(1); 
+  }
+}
+
+@keyframes logo-entrance {
+  0% { 
+    opacity: 0; 
+    transform: scale(0) rotate(-180deg); 
+  }
+  50% { 
+    opacity: 0.5; 
+    transform: scale(1.2) rotate(-90deg); 
+  }
+  100% { 
+    opacity: 1; 
+    transform: scale(1) rotate(0deg); 
+  }
+}
+
+@keyframes text-glow {
+  0%, 100% { 
+    text-shadow: 0 0 5px rgba(196, 92, 38, 0.3); 
+  }
+  50% { 
+    text-shadow: 0 0 20px rgba(196, 92, 38, 0.6), 0 0 30px rgba(255, 184, 0, 0.4); 
+  }
+}
+
+@keyframes ring-pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.3;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.3;
+  }
+}
+
+.initial-fade-in {
+  animation: initial-fade-in 0.8s ease-out;
+}
+
+.logo-entrance {
+  animation: logo-entrance 1.2s ease-out;
+}
+
+.text-glow {
+  animation: text-glow 2s ease-in-out infinite;
+}
+
+.ring-pulse {
+  animation: ring-pulse 2s ease-in-out infinite;
+}
+
+/* Particle effects */
+.loading-particle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: #FFB800;
+  border-radius: 50%;
+  animation: particle-float 4s linear infinite;
+}
+
+@keyframes particle-float {
+  0% {
+    transform: translateY(100vh) translateX(0px) scale(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100px) translateX(100px) scale(0);
+    opacity: 0;
+  }
+}
+
+/* Heritage pattern background */
+.heritage-pattern {
+  background: rgba(255, 184, 0, 0.1);
+  background-size: 100px 100px;
+  animation: pattern-move 20s linear infinite;
+}
+
+@keyframes pattern-move {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 100% 100%; }
+}
+
+/* Interactive elements */
+.loading-interactive-btn {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.loading-interactive-btn:hover {
+  transform: translateY(-2px);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.loading-interactive-btn:active {
+  transform: translateY(0px);
+}
+
+/* Progress bar animations */
+.loading-progress-bar {
+  background: #FFB800;
+  animation: progress-shimmer 2s linear infinite;
+}
+
+@keyframes progress-shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* Responsive loading screen */
+@media (max-width: 768px) {
+  .loading-main-icon {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .loading-heritage-icons {
+    display: none; /* Hide floating icons on mobile for performance */
+  }
+  
+  .loading-title {
+    font-size: 2rem;
+  }
+  
+  .loading-subtitle {
+    font-size: 0.875rem;
+  }
+}
+
+/* Dark mode loading adjustments */
+.dark .loading-particle {
+  background: #FFD700;
+}
+
+.dark .heritage-pattern {
+  background: rgba(255, 215, 0, 0.1);
+}
+
+/* ===== HIDE SCROLLBARS GLOBALLY ===== */
+
+/* Hide scrollbar for webkit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+/* Hide scrollbar for Firefox */
+html {
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbar for IE and Edge legacy */
+body {
+  -ms-overflow-style: none;
+  overflow-x: hidden; /* Prevent horizontal scrollbar */
+}
+
+/* Ensure all elements hide scrollbars */
+* {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+/* Additional rules for complete scrollbar removal */
+html, body {
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Ensure root element doesn't show scrollbars */
+#root {
+  overflow-x: hidden;
+}
+
+/* Override any potential scrollbar styles from components */
+.overflow-auto::-webkit-scrollbar,
+.overflow-y-auto::-webkit-scrollbar,
+.overflow-x-auto::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.overflow-auto,
+.overflow-y-auto,
+.overflow-x-auto {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+/* ===== SECTION TRANSITIONS ===== */
+
+/* Smooth scroll behavior for section navigation */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Section transition base styles */
+.section-transition {
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+/* Intersection observer optimization */
+.section-visible {
+  opacity: 1;
+  transform: translateY(0) translateX(0) scale(1);
+}
+
+.section-hidden {
+  opacity: 0;
+}
+
+/* Enhanced scroll animations */
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Staggered animations for child elements */
+.stagger-children > * {
+  animation-delay: calc(var(--stagger-delay, 0.1s) * var(--stagger-index, 0));
+}
+
+/* Parallax effect for sections */
+.parallax-section {
+  transform-style: preserve-3d;
+}
+
+/* Smooth transitions for theme changes */
+.section-transition * {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Performance optimizations */
+.section-transition {
+  contain: layout style paint;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .section-transition {
+    animation: none !important;
+    transition: none !important;
+  }
+  
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .section-transition {
+    transform: none !important; /* Disable complex transforms on mobile for performance */
+  }
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beacon Node Test</title>
+    <script src="https://cdn.socket.io/4.7.4/socket.io.min.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+        .container { margin: 20px 0; padding: 20px; border: 1px solid #ddd; border-radius: 8px; }
+        .status { padding: 10px; margin: 10px 0; border-radius: 4px; }
+        .connected { background-color: #d4edda; color: #155724; }
+        .disconnected { background-color: #f8d7da; color: #721c24; }
+        button { padding: 10px 20px; margin: 5px; background: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; }
+        button:hover { background: #0056b3; }
+        button:disabled { background: #6c757d; cursor: not-allowed; }
+        input, textarea { width: 100%; padding: 8px; margin: 5px 0; border: 1px solid #ddd; border-radius: 4px; }
+        .message { margin: 10px 0; padding: 10px; background: #f8f9fa; border-left: 4px solid #007bff; }
+        .narrative { margin: 10px 0; padding: 15px; background: #fff3cd; border-left: 4px solid #ffc107; }
+    </style>
+</head>
+<body>
+    <h1>🔗 Beacon Node System Test</h1>
+    
+    <div class="container">
+        <h2>Connection Status</h2>
+        <div id="status" class="status disconnected">Disconnected</div>
+        <button onclick="connect()">Connect to Beacon Service</button>
+    </div>
+
+    <div class="container">
+        <h2>Node Head</h2>
+        <input type="text" id="nodeHeadName" placeholder="Node Head Device Name" value="Test Node Head">
+        <button onclick="registerNodeHead()" id="nodeHeadBtn">Register as Node Head</button>
+        <div id="nodeHeadStatus"></div>
+    </div>
+
+    <div class="container">
+        <h2>Beacon Node</h2>
+        <input type="text" id="beaconName" placeholder="Beacon Device Name" value="Test Beacon">
+        <button onclick="registerBeacon()" id="beaconBtn">Register as Beacon</button>
+        <div id="beaconStatus"></div>
+        
+        <h3>Send Message</h3>
+        <input type="text" id="message" placeholder="e.g., This is Victoria Memorial">
+        <button onclick="sendMessage()" id="sendBtn">Send Beacon Message</button>
+    </div>
+
+    <div class="container">
+        <h2>Messages & Narratives</h2>
+        <div id="messages"></div>
+        <div id="narratives"></div>
+    </div>
+
+    <script>
+        let socket = null;
+        let isNodeHead = false;
+        let isBeacon = false;
+
+        function connect() {
+            socket = io('http://localhost:3001');
+            
+            socket.on('connect', () => {
+                document.getElementById('status').textContent = 'Connected';
+                document.getElementById('status').className = 'status connected';
+                console.log('Connected to beacon service');
+            });
+
+            socket.on('disconnect', () => {
+                document.getElementById('status').textContent = 'Disconnected';
+                document.getElementById('status').className = 'status disconnected';
+                console.log('Disconnected from beacon service');
+            });
+
+            socket.on('node-head-registered', (data) => {
+                document.getElementById('nodeHeadStatus').innerHTML = '<div class="message">✅ Registered as Node Head</div>';
+                isNodeHead = true;
+                console.log('Node Head registered:', data);
+            });
+
+            socket.on('beacon-registered', (data) => {
+                if (data.success) {
+                    document.getElementById('beaconStatus').innerHTML = '<div class="message">✅ Registered as Beacon Node</div>';
+                    isBeacon = true;
+                } else {
+                    // This is a notification about another beacon
+                    console.log('New beacon registered:', data);
+                }
+            });
+
+            socket.on('beacon-message-received', (message) => {
+                const messagesDiv = document.getElementById('messages');
+                messagesDiv.innerHTML += `<div class="message">📨 Message from ${message.deviceName}: "${message.message}"</div>`;
+                console.log('Beacon message received:', message);
+            });
+
+            socket.on('narrative-generated', (narrative) => {
+                const narrativesDiv = document.getElementById('narratives');
+                narrativesDiv.innerHTML += `
+                    <div class="narrative">
+                        <strong>📖 Generated Narrative</strong><br>
+                        <small>Original: "${narrative.originalMessage}"</small><br><br>
+                        ${narrative.narrative}
+                        <br><br>
+                        <button onclick="playNarrative('${narrative.narrative}')">🔊 Play Audio</button>
+                    </div>
+                `;
+                console.log('Narrative generated:', narrative);
+            });
+
+            socket.on('error', (error) => {
+                console.error('Socket error:', error);
+                alert('Error: ' + error.message);
+            });
+        }
+
+        function registerNodeHead() {
+            if (!socket) {
+                alert('Please connect first');
+                return;
+            }
+            const name = document.getElementById('nodeHeadName').value;
+            socket.emit('register-node-head', { deviceName: name });
+        }
+
+        function registerBeacon() {
+            if (!socket) {
+                alert('Please connect first');
+                return;
+            }
+            const name = document.getElementById('beaconName').value;
+            socket.emit('register-beacon', { 
+                deviceName: name,
+                location: { lat: 22.5726, lng: 88.3639 } // Default Kolkata location
+            });
+        }
+
+        function sendMessage() {
+            if (!socket || !isBeacon) {
+                alert('Please register as beacon first');
+                return;
+            }
+            const message = document.getElementById('message').value;
+            if (!message.trim()) {
+                alert('Please enter a message');
+                return;
+            }
+            socket.emit('beacon-message', { 
+                message: message.trim(),
+                location: { lat: 22.5726, lng: 88.3639 }
+            });
+            document.getElementById('message').value = '';
+        }
+
+        function playNarrative(text) {
+            if ('speechSynthesis' in window) {
+                window.speechSynthesis.cancel();
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.rate = 0.9;
+                utterance.pitch = 1.1;
+                utterance.volume = 0.8;
+                
+                // Try to find Indian voice
+                const voices = window.speechSynthesis.getVoices();
+                const indianVoice = voices.find(voice => 
+                    voice.lang.includes('en-IN') || 
+                    voice.name.toLowerCase().includes('indian')
+                );
+                
+                if (indianVoice) {
+                    utterance.voice = indianVoice;
+                }
+                
+                window.speechSynthesis.speak(utterance);
+            } else {
+                alert('Speech synthesis not supported in this browser');
+            }
+        }
+
+        // Auto-connect on page load
+        window.onload = () => {
+            connect();
+        };
+    </script>
+</body>
+</html>

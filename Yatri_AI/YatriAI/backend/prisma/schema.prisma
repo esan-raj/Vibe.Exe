@@ -1,0 +1,320 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum UserRole {
+  tourist
+  admin
+  guide
+  seller
+}
+
+enum UserStatus {
+  Active
+  Blocked
+}
+
+enum Budget {
+  budget
+  mid_range
+  luxury
+}
+
+enum TravelStyle {
+  solo
+  couple
+  family
+  group
+}
+
+enum DestinationCategory {
+  nature
+  cultural
+  adventure
+  spiritual
+}
+
+enum BookingType {
+  guide
+  accommodation
+  package
+}
+
+enum BookingStatus {
+  confirmed
+  pending
+  cancelled
+}
+
+enum TourStatus {
+  Active
+  Draft
+  Archived
+}
+
+enum ProductStatus {
+  Active
+  Out_of_Stock
+  Draft
+}
+
+model User {
+  id            String    @id @default(cuid())
+  email         String    @unique
+  password      String
+  name          String
+  role          UserRole  @default(tourist)
+  status        UserStatus @default(Active)
+  avatar        String?
+  isVerified    Boolean   @default(false)
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  // Relations
+  preferences   TravelPreference?
+  bookings      Booking[]
+  itineraries   Itinerary[]
+  guide         Guide?
+  seller        Seller?
+  feedback      Feedback[]
+
+  @@map("users")
+}
+
+model TravelPreference {
+  id          String      @id @default(cuid())
+  userId      String      @unique
+  interests   String[]
+  budget      Budget      @default(mid_range)
+  travelStyle TravelStyle @default(solo)
+  duration    Int         @default(3)
+
+  user        User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("travel_preferences")
+}
+
+model Destination {
+  id          String              @id @default(cuid())
+  name        String
+  description String
+  image       String
+  category    DestinationCategory
+  rating      Float               @default(0)
+  latitude    Float
+  longitude   Float
+  createdAt   DateTime            @default(now())
+  updatedAt   DateTime            @updatedAt
+
+  // Relations
+  itineraries ItineraryDestination[]
+
+  @@map("destinations")
+}
+
+model Guide {
+  id          String   @id @default(cuid())
+  userId      String   @unique
+  experience  Int      @default(0)
+  languages   String[]
+  specialties String[]
+  pricePerDay Float
+  location    String
+  rating      Float    @default(0)
+  totalRatings Int     @default(0)
+
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  tours       Tour[]
+  bookings    GuideBooking[]
+
+  @@map("guides")
+}
+
+model Tour {
+  id          String    @id @default(cuid())
+  guideId     String
+  title       String
+  description String
+  image       String
+  duration    String
+  price       Float
+  status      TourStatus @default(Draft)
+  bookings    Int       @default(0)
+  approved    Boolean   @default(false)
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  guide       Guide     @relation(fields: [guideId], references: [id], onDelete: Cascade)
+  guideBookings GuideBooking[]
+
+  @@map("tours")
+}
+
+model GuideBooking {
+  id            String   @id @default(cuid())
+  tourId        String
+  guideId       String
+  touristName   String
+  touristEmail  String
+  date          DateTime
+  status        BookingStatus @default(pending)
+  amount        Float
+  participants  Int      @default(1)
+  createdAt     DateTime @default(now())
+
+  tour          Tour     @relation(fields: [tourId], references: [id], onDelete: Cascade)
+  guide         Guide    @relation(fields: [guideId], references: [id], onDelete: Cascade)
+
+  @@map("guide_bookings")
+}
+
+model Seller {
+  id          String   @id @default(cuid())
+  userId      String   @unique
+  shopName    String
+  rating      Float    @default(0)
+  totalRatings Int     @default(0)
+
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  products    Product[]
+
+  @@map("sellers")
+}
+
+model Product {
+  id          String        @id @default(cuid())
+  sellerId    String
+  name        String
+  description String
+  price       Float
+  image       String
+  category    String
+  stock       Int           @default(0)
+  status      ProductStatus @default(Active)
+  sales       Int           @default(0)
+  approved    Boolean       @default(false)
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+
+  seller      Seller        @relation(fields: [sellerId], references: [id], onDelete: Cascade)
+
+  @@map("products")
+}
+
+model Booking {
+  id             String        @id @default(cuid())
+  userId         String
+  type           BookingType
+  title          String
+  date           DateTime
+  status         BookingStatus @default(pending)
+  amount         Float
+  blockchainHash String?
+  createdAt      DateTime      @default(now())
+  updatedAt      DateTime      @updatedAt
+
+  user           User          @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("bookings")
+}
+
+model Itinerary {
+  id            String   @id @default(cuid())
+  userId        String
+  title         String
+  duration      Int
+  activities    String[]
+  estimatedCost Float
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  user          User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  destinations  ItineraryDestination[]
+
+  @@map("itineraries")
+}
+
+model ItineraryDestination {
+  id            String      @id @default(cuid())
+  itineraryId   String
+  destinationId String
+  order         Int         @default(0)
+
+  itinerary     Itinerary   @relation(fields: [itineraryId], references: [id], onDelete: Cascade)
+  destination   Destination @relation(fields: [destinationId], references: [id], onDelete: Cascade)
+
+  @@unique([itineraryId, destinationId])
+  @@map("itinerary_destinations")
+}
+
+model Feedback {
+  id        String   @id @default(cuid())
+  userId    String
+  rating    Int
+  comment   String
+  category  String   @default("platform")
+  sentiment String?
+  verified  Boolean  @default(false)
+  createdAt DateTime @default(now())
+
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("feedback")
+}
+
+model AITip {
+  id        String   @id @default(cuid())
+  content   String
+  isActive  Boolean  @default(true)
+  createdAt DateTime @default(now())
+
+  @@map("ai_tips")
+}
+
+model Testimonial {
+  id        String   @id @default(cuid())
+  name      String
+  avatar    String
+  rating    Int
+  comment   String
+  sentiment String
+  location  String
+  isActive  Boolean  @default(true)
+  createdAt DateTime @default(now())
+
+  @@map("testimonials")
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,542 @@
+[
+  {
+    "text": "Plan a 3-day itinerary for Kolkata",
+    "intent": "plan_itinerary"
+  },
+  {
+    "text": "Create a travel plan",
+    "intent": "plan_itinerary"
+  },
+  {
+    "text": "I need an itinerary",
+    "intent": "plan_itinerary"
+  },
+  {
+    "text": "Make a schedule for my trip",
+    "intent": "plan_itinerary"
+  },
+  {
+    "text": "Organize a 5-day tour",
+    "intent": "plan_itinerary"
+  },
+  {
+    "text": "Plan my Kolkata visit",
+    "intent": "plan_itinerary"
+  },
+  {
+    "text": "Create itinerary",
+    "intent": "plan_itinerary"
+  },
+  {
+    "text": "Schedule a trip",
+    "intent": "plan_itinerary"
+  },
+  {
+    "text": "I want to plan a trip",
+    "intent": "plan_itinerary"
+  },
+  {
+    "text": "Can you create an itinerary?",
+    "intent": "plan_itinerary"
+  },
+  {
+    "text": "Plan a weekend trip",
+    "intent": "plan_itinerary"
+  },
+  {
+    "text": "Make a travel itinerary",
+    "intent": "plan_itinerary"
+  },
+  {
+    "text": "I need a travel plan",
+    "intent": "plan_itinerary"
+  },
+  {
+    "text": "Design an itinerary",
+    "intent": "plan_itinerary"
+  },
+  {
+    "text": "Plan my journey",
+    "intent": "plan_itinerary"
+  },
+  {
+    "text": "I want to book a guide",
+    "intent": "book_guide"
+  },
+  {
+    "text": "Hire a local guide",
+    "intent": "book_guide"
+  },
+  {
+    "text": "Find a guide for tomorrow",
+    "intent": "book_guide"
+  },
+  {
+    "text": "Need a guide",
+    "intent": "book_guide"
+  },
+  {
+    "text": "Book guide",
+    "intent": "book_guide"
+  },
+  {
+    "text": "Guide available?",
+    "intent": "book_guide"
+  },
+  {
+    "text": "I need a guide",
+    "intent": "book_guide"
+  },
+  {
+    "text": "Can I book a guide?",
+    "intent": "book_guide"
+  },
+  {
+    "text": "I want to hire a guide",
+    "intent": "book_guide"
+  },
+  {
+    "text": "Find me a guide",
+    "intent": "book_guide"
+  },
+  {
+    "text": "Book a tour guide",
+    "intent": "book_guide"
+  },
+  {
+    "text": "I need a local guide",
+    "intent": "book_guide"
+  },
+  {
+    "text": "Guide booking",
+    "intent": "book_guide"
+  },
+  {
+    "text": "Get me a guide",
+    "intent": "book_guide"
+  },
+  {
+    "text": "Can you find a guide?",
+    "intent": "book_guide"
+  },
+  {
+    "text": "Show me heritage sites",
+    "intent": "find_heritage"
+  },
+  {
+    "text": "Heritage sites in Kolkata",
+    "intent": "find_heritage"
+  },
+  {
+    "text": "Historical monuments",
+    "intent": "find_heritage"
+  },
+  {
+    "text": "Show heritage attractions",
+    "intent": "find_heritage"
+  },
+  {
+    "text": "List heritage sites",
+    "intent": "find_heritage"
+  },
+  {
+    "text": "What heritage sites are there?",
+    "intent": "find_heritage"
+  },
+  {
+    "text": "Heritage places to visit",
+    "intent": "find_heritage"
+  },
+  {
+    "text": "Show monuments",
+    "intent": "find_heritage"
+  },
+  {
+    "text": "Find historical places",
+    "intent": "find_heritage"
+  },
+  {
+    "text": "Show me monuments",
+    "intent": "find_heritage"
+  },
+  {
+    "text": "Heritage locations",
+    "intent": "find_heritage"
+  },
+  {
+    "text": "What monuments can I see?",
+    "intent": "find_heritage"
+  },
+  {
+    "text": "List historical sites",
+    "intent": "find_heritage"
+  },
+  {
+    "text": "Show heritage places",
+    "intent": "find_heritage"
+  },
+  {
+    "text": "Find heritage attractions",
+    "intent": "find_heritage"
+  },
+  {
+    "text": "How much will it cost?",
+    "intent": "budget_question"
+  },
+  {
+    "text": "What's the budget?",
+    "intent": "budget_question"
+  },
+  {
+    "text": "How much money do I need?",
+    "intent": "budget_question"
+  },
+  {
+    "text": "What's the price?",
+    "intent": "budget_question"
+  },
+  {
+    "text": "Cost estimate",
+    "intent": "budget_question"
+  },
+  {
+    "text": "Budget for trip",
+    "intent": "budget_question"
+  },
+  {
+    "text": "How expensive?",
+    "intent": "budget_question"
+  },
+  {
+    "text": "What will it cost?",
+    "intent": "budget_question"
+  },
+  {
+    "text": "How much does it cost?",
+    "intent": "budget_question"
+  },
+  {
+    "text": "What is the cost?",
+    "intent": "budget_question"
+  },
+  {
+    "text": "Estimate the budget",
+    "intent": "budget_question"
+  },
+  {
+    "text": "How much should I budget?",
+    "intent": "budget_question"
+  },
+  {
+    "text": "What's the expense?",
+    "intent": "budget_question"
+  },
+  {
+    "text": "Cost of trip",
+    "intent": "budget_question"
+  },
+  {
+    "text": "Budget estimate please",
+    "intent": "budget_question"
+  },
+  {
+    "text": "Tell me about Durga Puja",
+    "intent": "cultural_info"
+  },
+  {
+    "text": "Explain heritage significance",
+    "intent": "cultural_info"
+  },
+  {
+    "text": "What is Victoria Memorial?",
+    "intent": "cultural_info"
+  },
+  {
+    "text": "History of Kolkata",
+    "intent": "cultural_info"
+  },
+  {
+    "text": "Tell me about the culture",
+    "intent": "cultural_info"
+  },
+  {
+    "text": "Explain traditions",
+    "intent": "cultural_info"
+  },
+  {
+    "text": "What's the significance?",
+    "intent": "cultural_info"
+  },
+  {
+    "text": "Tell me more about this",
+    "intent": "cultural_info"
+  },
+  {
+    "text": "What is the history?",
+    "intent": "cultural_info"
+  },
+  {
+    "text": "Explain the culture",
+    "intent": "cultural_info"
+  },
+  {
+    "text": "Tell me about traditions",
+    "intent": "cultural_info"
+  },
+  {
+    "text": "What does this mean?",
+    "intent": "cultural_info"
+  },
+  {
+    "text": "Explain this place",
+    "intent": "cultural_info"
+  },
+  {
+    "text": "Cultural significance",
+    "intent": "cultural_info"
+  },
+  {
+    "text": "What's the story behind this?",
+    "intent": "cultural_info"
+  },
+  {
+    "text": "Check my bookings",
+    "intent": "booking_query"
+  },
+  {
+    "text": "My booking status",
+    "intent": "booking_query"
+  },
+  {
+    "text": "View reservations",
+    "intent": "booking_query"
+  },
+  {
+    "text": "Show my bookings",
+    "intent": "booking_query"
+  },
+  {
+    "text": "Booking confirmation",
+    "intent": "booking_query"
+  },
+  {
+    "text": "What are my bookings?",
+    "intent": "booking_query"
+  },
+  {
+    "text": "Show reservations",
+    "intent": "booking_query"
+  },
+  {
+    "text": "Check reservations",
+    "intent": "booking_query"
+  },
+  {
+    "text": "My booked items",
+    "intent": "booking_query"
+  },
+  {
+    "text": "View my bookings",
+    "intent": "booking_query"
+  },
+  {
+    "text": "List my bookings",
+    "intent": "booking_query"
+  },
+  {
+    "text": "Show booking details",
+    "intent": "booking_query"
+  },
+  {
+    "text": "Check booking status",
+    "intent": "booking_query"
+  },
+  {
+    "text": "What did I book?",
+    "intent": "booking_query"
+  },
+  {
+    "text": "Display my bookings",
+    "intent": "booking_query"
+  },
+  {
+    "text": "Show me artisan products",
+    "intent": "marketplace"
+  },
+  {
+    "text": "Handicrafts for sale",
+    "intent": "marketplace"
+  },
+  {
+    "text": "Buy products",
+    "intent": "marketplace"
+  },
+  {
+    "text": "Marketplace",
+    "intent": "marketplace"
+  },
+  {
+    "text": "Show crafts",
+    "intent": "marketplace"
+  },
+  {
+    "text": "I want to buy handicrafts",
+    "intent": "marketplace"
+  },
+  {
+    "text": "Show me products",
+    "intent": "marketplace"
+  },
+  {
+    "text": "Artisan marketplace",
+    "intent": "marketplace"
+  },
+  {
+    "text": "Where can I buy crafts?",
+    "intent": "marketplace"
+  },
+  {
+    "text": "Show artisan items",
+    "intent": "marketplace"
+  },
+  {
+    "text": "I want to shop",
+    "intent": "marketplace"
+  },
+  {
+    "text": "Browse products",
+    "intent": "marketplace"
+  },
+  {
+    "text": "Show marketplace items",
+    "intent": "marketplace"
+  },
+  {
+    "text": "What products are available?",
+    "intent": "marketplace"
+  },
+  {
+    "text": "Show me things to buy",
+    "intent": "marketplace"
+  },
+  {
+    "text": "How to reach Kolkata by train?",
+    "intent": "transport"
+  },
+  {
+    "text": "Transport options",
+    "intent": "transport"
+  },
+  {
+    "text": "How to get there?",
+    "intent": "transport"
+  },
+  {
+    "text": "Train booking",
+    "intent": "transport"
+  },
+  {
+    "text": "Travel routes",
+    "intent": "transport"
+  },
+  {
+    "text": "How do I get to Kolkata?",
+    "intent": "transport"
+  },
+  {
+    "text": "Transportation options",
+    "intent": "transport"
+  },
+  {
+    "text": "Book a train",
+    "intent": "transport"
+  },
+  {
+    "text": "How to travel?",
+    "intent": "transport"
+  },
+  {
+    "text": "Show transport options",
+    "intent": "transport"
+  },
+  {
+    "text": "Train routes",
+    "intent": "transport"
+  },
+  {
+    "text": "How can I reach?",
+    "intent": "transport"
+  },
+  {
+    "text": "Transportation help",
+    "intent": "transport"
+  },
+  {
+    "text": "Book transport",
+    "intent": "transport"
+  },
+  {
+    "text": "Travel options",
+    "intent": "transport"
+  },
+  {
+    "text": "Hello, how are you?",
+    "intent": "general_chat"
+  },
+  {
+    "text": "Hi",
+    "intent": "general_chat"
+  },
+  {
+    "text": "Thanks",
+    "intent": "general_chat"
+  },
+  {
+    "text": "Good morning",
+    "intent": "general_chat"
+  },
+  {
+    "text": "Help me",
+    "intent": "general_chat"
+  },
+  {
+    "text": "Hello",
+    "intent": "general_chat"
+  },
+  {
+    "text": "Hey",
+    "intent": "general_chat"
+  },
+  {
+    "text": "Goodbye",
+    "intent": "general_chat"
+  },
+  {
+    "text": "Thank you",
+    "intent": "general_chat"
+  },
+  {
+    "text": "Thanks a lot",
+    "intent": "general_chat"
+  },
+  {
+    "text": "Good evening",
+    "intent": "general_chat"
+  },
+  {
+    "text": "Nice to meet you",
+    "intent": "general_chat"
+  },
+  {
+    "text": "How can you help?",
+    "intent": "general_chat"
+  },
+  {
+    "text": "What can you do?",
+    "intent": "general_chat"
+  },
+  {
+    "text": "Tell me about yourself",
+    "intent": "general_chat"
+  }
+]
